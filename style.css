@@ -2117,3 +2117,136 @@ footer {
 
     letter-spacing: 0.5px;
 }
+/* ==================================================
+   КНОПКА "НАВЕРХ"
+   ================================================== */
+
+.back-to-top {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(70, 82, 60, 0.88);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+
+    color: #f4efe3;
+    text-decoration: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    line-height: 1;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+
+    z-index: 1000;
+
+    transition:
+        background 0.2s,
+        transform 0.2s,
+        opacity 0.2s;
+}
+
+.back-to-top:hover {
+    background: #3f4c37;
+    transform: translateY(-3px);
+}
+
+
+/* ---------- Телефон ---------- */
+
+@media (max-width: 650px) {
+
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 22px;
+    }
+
+}
+/* ==================================================
+   КНОПКА "НАВЕРХ"
+   ================================================== */
+
+.back-to-top {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(70, 82, 60, 0.9);
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 50%;
+
+    color: #f4efe3;
+
+    font-size: 24px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.25s,
+        visibility 0.25s,
+        transform 0.25s,
+        background 0.2s;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: #3f4c37;
+    transform: translateY(-3px);
+}
+
+
+/* Телефон */
+
+@media (max-width: 650px) {
+
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 21px;
+    }
+
+}
