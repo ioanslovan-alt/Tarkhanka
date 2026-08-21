@@ -1,71 +1,344 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333333;
-    margin: 0;
+/* ==================================================
+   ТАРХАНКА — современный стиль портала
+   ================================================== */
+
+
+/* ---------- Основные настройки ---------- */
+
+* {
+    box-sizing: border-box;
 }
 
-/* Шапка сайта */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f3ef;
+    color: #292929;
+    line-height: 1.7;
+}
+
+
+/* ---------- Шапка ---------- */
 
 header {
-    background-color: #2c5f2d;
-    color: white;
+    background-color: #ffffff;
     text-align: center;
-    padding: 40px 20px;
+    padding: 55px 20px 45px;
+    border-bottom: 1px solid #e4e2dc;
 }
 
 header h1 {
     margin: 0;
+    color: #252525;
     font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
 
 header p {
-    font-size: 20px;
+    margin: 8px 0 0;
+    color: #6d6d6d;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
-/* Меню */
+
+/* ---------- Главное меню ---------- */
 
 nav {
-    background-color: #333333;
-    text-align: center;
-    padding: 15px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e4e2dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 14px 20px;
 }
 
 nav a {
-    color: white;
+    color: #4b4b4b;
     text-decoration: none;
-    margin: 0 12px;
-    font-size: 16px;
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.2s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #48624a;
+    background-color: #eef1ed;
 }
 
-/* Основная часть */
+
+/* ---------- Основная часть ---------- */
 
 main {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 20px;
+    width: 100%;
+    max-width: 1050px;
+    margin: 50px auto;
+    padding: 0 25px;
 }
 
+
+/* ---------- Общие блоки ---------- */
+
 section {
-    background-color: white;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 section h2 {
-    color: #2c5f2d;
+    margin-top: 0;
+    margin-bottom: 22px;
+    color: #292929;
+    font-size: 29px;
+    font-weight: 600;
 }
 
-/* Подвал */
+
+/* ---------- Приветственный блок ---------- */
+
+.welcome {
+    text-align: center;
+    padding: 50px 45px;
+}
+
+.welcome h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    max-width: 750px;
+    margin: 10px auto;
+    color: #626262;
+    font-size: 17px;
+}
+
+
+/* ---------- Фотография села ---------- */
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto 30px;
+}
+/* ---------- Статьи ---------- */
+
+article {
+    padding: 5px 0;
+}
+
+article h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #303030;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+article p {
+    color: #5f5f5f;
+}
+
+
+/* ---------- Ссылки ---------- */
+
+a {
+    color: #48624a;
+}
+
+article a,
+section > a {
+    font-weight: 600;
+}
+
+
+/* ---------- Карточки портала ---------- */
+
+.portal-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.portal-card {
+    display: block;
+    padding: 28px;
+    background-color: #f8f8f6;
+    border: 1px solid #e6e5df;
+    border-radius: 9px;
+    text-decoration: none;
+    color: #292929;
+    transition: 0.2s ease;
+}
+
+.portal-card:hover {
+    background-color: #eef1ed;
+    border-color: #cbd5ca;
+    transform: translateY(-2px);
+}
+
+.card-icon {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.portal-card h3 {
+    margin: 0 0 8px;
+    color: #48624a;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.portal-card p {
+    margin: 0;
+    color: #707070;
+    font-size: 15px;
+}
+
+
+/* ---------- Историческая хронология ---------- */
+
+.history-item {
+    border-left: 3px solid #8da18e;
+    padding: 5px 0 5px 25px;
+    margin-bottom: 35px;
+}
+
+.history-item h3 {
+    margin: 0 0 8px;
+    color: #48624a;
+    font-size: 24px;
+}
+
+.history-item p {
+    margin: 5px 0;
+}
+
+
+/* ---------- Блок участия ---------- */
+
+.participate {
+    text-align: center;
+    background-color: #eef1ed;
+    box-shadow: none;
+}
+
+.participate h2 {
+    color: #354b37;
+}
+
+.participate p {
+    max-width: 700px;
+    margin: 10px auto;
+    color: #5f665f;
+}
+
+
+/* ---------- Кнопки ---------- */
+
+button {
+    background-color: #48624a;
+    color: #ffffff;
+    border: none;
+    padding: 12px 22px;
+    margin: 15px 5px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #354b37;
+}
+
+
+/* ---------- Подвал ---------- */
 
 footer {
-    background-color: #333333;
-    color: white;
+    background-color: #292929;
+    color: #d7d7d7;
     text-align: center;
-    padding: 20px;
+    padding: 35px 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p:first-child {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+
+/* ---------- Адаптация для телефона ---------- */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 40px 20px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+
+    main {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+
+    .welcome {
+        padding: 30px 20px;
+    }
+
+    .welcome h2 {
+        font-size: 27px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .portal-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .village-photo {
+        max-height: 300px;
+    }
+}
+
+.village-photo {
+    height: 250px !important;
 }
