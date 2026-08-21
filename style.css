@@ -1527,3 +1527,91 @@ footer p:first-child {
     }
 
 }
+/* ===== Исправление мобильной ширины ===== */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.hero,
+.hero-overlay,
+nav,
+main,
+.intro-section,
+.portal-cards,
+.home-grid,
+footer {
+    max-width: 100%;
+}
+
+@media (max-width: 700px) {
+
+    .hero {
+        width: 100vw;
+        height: 200px;
+    }
+
+    .hero-overlay {
+        padding: 15px 10px;
+    }
+
+    .hero h1 {
+        font-size: 11vw;
+        letter-spacing: 3px;
+        white-space: nowrap;
+    }
+
+    .hero p {
+        font-size: 11px;
+        letter-spacing: 2px;
+        line-height: 1.8;
+        max-width: 300px;
+        margin: 10px auto 0;
+    }
+
+    nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    nav a {
+        min-width: 0;
+        width: auto;
+        padding: 13px 5px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    main {
+        width: 100%;
+        padding: 25px 15px 40px;
+    }
+
+    .intro-section {
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .intro-text {
+        width: 100%;
+    }
+
+    .portal-cards {
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .portal-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .home-grid {
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
