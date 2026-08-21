@@ -1615,3 +1615,132 @@ footer {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+/* ---------- Читаемость исторического текста ---------- */
+
+.history-page p {
+    font-weight: 530;
+}
+
+.history-page h2 {
+    font-weight: 400;
+}
+
+.history-page h3 {
+    font-weight: 800;
+}
+/* ==================================================
+   ИСТОЧНИКИ И ИССЛЕДОВАНИЯ
+   ================================================== */
+
+.history-sources {
+    padding: 45px 50px;
+}
+
+.sources-intro {
+    max-width: 760px;
+    margin-bottom: 35px;
+}
+
+.source-list {
+    margin-top: 35px;
+}
+
+.source-item {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 20px;
+
+    padding: 25px 0;
+
+    border-top: 1px solid rgba(80, 70, 50, 0.25);
+}
+
+.source-item:last-child {
+    border-bottom: 1px solid rgba(80, 70, 50, 0.25);
+}
+
+.source-number {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    color: #756c58;
+    letter-spacing: 1px;
+}
+
+.source-item h3 {
+    margin: 0 0 8px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.source-item p {
+    margin: 5px 0;
+}
+
+.source-reference {
+    margin-top: 10px !important;
+
+    font-size: 14px;
+    font-style: italic;
+    color: #6f6758;
+}
+
+.source-note {
+    margin-top: 10px !important;
+
+    font-size: 14px;
+    font-style: italic;
+    color: #6f6758;
+}
+
+
+/* ---------- Примечание исследователя ---------- */
+
+.research-note {
+    margin-top: 35px;
+
+    padding: 22px 25px;
+
+    border-left: 3px solid #756c58;
+
+    background: rgba(110, 95, 65, 0.07);
+}
+
+.research-note strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+}
+
+.research-note p {
+    margin: 7px 0 0;
+}
+
+
+/* ---------- Телефон ---------- */
+
+@media (max-width: 700px) {
+
+    .history-sources {
+        padding: 30px 20px;
+    }
+
+    .source-item {
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 10px;
+
+        padding: 20px 0;
+    }
+
+    .source-number {
+        font-size: 15px;
+    }
+
+    .source-item h3 {
+        font-size: 18px;
+    }
+
+    .research-note {
+        padding: 18px;
+    }
+}
