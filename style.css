@@ -2085,3 +2085,35 @@ footer {
 
     filter: sepia(18%) contrast(96%);
 }
+/* ==================================================
+   ЛЮДИ СТАРОЙ ТАРХАНКИ
+   ================================================== */
+
+.person-old {
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(91, 73, 49, 0.28),
+            rgba(58, 48, 35, 0.48)
+        ),
+        #aaa18d;
+}
+
+.person-old::after {
+    content: "архивная фотография не найдена";
+
+    position: absolute;
+
+    bottom: 18px;
+    left: 0;
+    right: 0;
+
+    color: rgba(244, 236, 216, 0.72);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+
+    letter-spacing: 0.5px;
+}
