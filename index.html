@@ -5,31 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Тарханка — портал села</title>
+    <title>Тарханка — портал родного села</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Шапка сайта -->
 
-    <header>
-        <h1>Тарханка</h1>
-        <p>Портал родного села</p>
+    <!-- Шапка -->
+
+    <header class="hero">
+
+        <div class="hero-overlay">
+
+            <h1>ТАРХАНКА</h1>
+
+            <p>ИСТОРИЯ&nbsp;&nbsp;•&nbsp;&nbsp; ЛЮДИ&nbsp;&nbsp;•&nbsp;&nbsp; МЕСТА&nbsp;&nbsp;•&nbsp;&nbsp; ПАМЯТЬ</p>
+
+        </div>
+
     </header>
 
 
     <!-- Главное меню -->
 
     <nav>
-        <a href="index.html">Главная</a>
+
+        <a href="index.html" class="active">Главная</a>
         <a href="history.html">История</a>
-        <a href="people.html">Наши люди</a>
+        <a href="people.html">Люди</a>
         <a href="places.html">Места</a>
         <a href="news.html">Новости</a>
         <a href="ads.html">Объявления</a>
         <a href="photos.html">Фотоархив</a>
+
     </nav>
 
 
@@ -37,140 +47,294 @@
 
     <main>
 
-        <!-- Приветствие -->
 
-<section class="welcome">
+        <!-- Приветствие + основные разделы -->
 
-    <img src="images/village/tarkhanka.jpg"
-         alt="Село Тарханка"
-         class="hero-image">
+        <section class="intro-section">
 
-    <h2>Добро пожаловать в Тарханку!</h2>
+            <div class="intro-text">
 
-    <p>
-        Здесь мы собираем историю нашего села,
-        рассказываем о людях, событиях и местах,
-        которые дороги его жителям.
-    </p>
+                <h2>Добро пожаловать<br>в Тарханку!</h2>
 
-</section>
-
-<!-- Основные разделы -->
-
-<section>
-
-    <h2>Тарханка</h2>
-
-    <div class="portal-cards">
-
-        <a href="history.html" class="portal-card">
-            <span class="card-icon">📜</span>
-            <h3>История</h3>
-            <p>
-                История села, важные события
-                и прошлое Тарханки.
-            </p>
-        </a>
-
-        <a href="people.html" class="portal-card">
-            <span class="card-icon">👨‍👩‍👧‍👦</span>
-            <h3>Наши люди</h3>
-            <p>
-                Истории жителей, старожилов
-                и известных людей села.
-            </p>
-        </a>
-
-        <a href="places.html" class="portal-card">
-            <span class="card-icon">📍</span>
-            <h3>Места</h3>
-            <p>
-                Интересные и памятные места
-                Тарханки.
-            </p>
-        </a>
-
-        <a href="photos.html" class="portal-card">
-            <span class="card-icon">📷</span>
-            <h3>Фотоархив</h3>
-            <p>
-                Фотографии Тарханки разных
-                лет и поколений.
-            </p>
-        </a>
-
-    </div>
-
-</section>
-
-        <!-- Новости -->
-
-        <section>
-            <h2>📰 Последние новости</h2>
-
-            <article>
-                <h3>Новости Тарханки скоро появятся здесь</h3>
+                <div class="decor-line"></div>
 
                 <p>
-                    В этом разделе будут публиковаться
-                    последние события и новости нашего села.
+                    Это портал о нашем селе и его людях,
+                    о событиях прошлого и настоящего,
+                    о местах, которые делают Тарханку
+                    особенной.
                 </p>
-
-                <a href="#">Все новости →</a>
-            </article>
-
-        </section>
-
-
-        <!-- Объявления -->
-
-        <section>
-            <h2>📢 Объявления</h2>
-
-            <article>
-                <h3>Доска объявлений Тарханки</h3>
 
                 <p>
-                    Здесь жители смогут размещать объявления
-                    о продаже, покупке, услугах, работе и других
-                    важных вещах.
+                    Здесь мы сохраняем память,
+                    делимся новостями и создаём
+                    летопись родного края.
                 </p>
 
-                <a href="#">Все объявления →</a>
-            </article>
+            </div>
+
+
+            <div class="portal-cards">
+
+
+                <a href="history.html" class="portal-card">
+
+                    <div class="card-icon">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 4h12a2 2 0 0 1 2 2v12H6a2 2 0 0 0-2 2V4z"></path>
+        <path d="M6 18h14v2H6a2 2 0 0 1 0-4h12"></path>
+        <path d="M8 8h6"></path>
+        <path d="M8 11h5"></path>
+    </svg>
+</div>
+
+                    <h3>История</h3>
+
+                    <p>
+                        Прошлое и становление села
+                    </p>
+
+                    <span>ПЕРЕЙТИ</span>
+
+                </a>
+
+
+                <a href="people.html" class="portal-card">
+
+                    <div class="card-icon">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="9" cy="8" r="3"></circle>
+        <path d="M3 19c0-3.2 2.7-5 6-5s6 1.8 6 5"></path>
+        <circle cx="17" cy="9" r="2"></circle>
+        <path d="M15 14c2.8 0 5 1.5 5 4"></path>
+    </svg>
+</div>
+
+                    <h3>Люди</h3>
+
+                    <p>
+                        Земляки, которыми мы гордимся
+                    </p>
+
+                    <span>ПЕРЕЙТИ</span>
+
+                </a>
+
+
+                <a href="places.html" class="portal-card">
+
+                    <div class="card-icon">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11z"></path>
+        <circle cx="12" cy="10" r="2"></circle>
+    </svg>
+</div>
+
+                    <h3>Места</h3>
+
+                    <p>
+                        Природа и достопримечательности Тарханки
+                    </p>
+
+                    <span>ПЕРЕЙТИ</span>
+
+                </a>
+
+
+                <a href="photos.html" class="portal-card">
+
+                   <div class="card-icon">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+        <circle cx="9" cy="10" r="2"></circle>
+        <path d="M4 17l5-4 3 3 2-2 6 3"></path>
+    </svg>
+</div>
+
+                    <h3>Фотоархив</h3>
+
+                    <p>
+                        Фотографии нашего села
+                    </p>
+
+                    <span>ПЕРЕЙТИ</span>
+
+                </a>
+
+            </div>
 
         </section>
 
 
-        <!-- Фотографии -->
+        <!-- Нижние информационные блоки -->
 
-        <section>
-            <h2>📷 Тарханка сегодня</h2>
+        <div class="home-grid">
 
-            <p>
-                Здесь появятся фотографии нашего села
-                и его жителей.
-            </p>
 
-            <a href="#">Открыть фотоархив →</a>
-        </section>
+            <!-- Тарханка сегодня -->
+
+            <section class="info-card">
+
+                <div class="block-title">
+
+                    <h2>Тарханка сегодня</h2>
+
+                </div>
+
+                <p>
+                    Тарханка — село в Глубоковском районе
+                    Восточно-Казахстанской области и
+                    административный центр Тарханского
+                    сельского округа.
+                </p>
+
+
+                <div class="facts">
+
+                    <div>
+                        <strong>3669</strong>
+                        <small>жителей округа</small>
+                    </div>
+
+                    <div>
+                        <strong>7</strong>
+                        <small>населённых пунктов</small>
+                    </div>
+
+                    <div>
+                        <strong>Ульба</strong>
+                        <small>река рядом с селом</small>
+                    </div>
+
+                    <div>
+                        <strong>Тарханский</strong>
+                        <small>геологический разрез</small>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Новости -->
+
+            <section class="info-card">
+
+                <div class="block-title">
+
+                    <h2>Последние новости</h2>
+
+                    <a href="news.html">Все новости →</a>
+
+                </div>
+
+
+                <article class="news-item">
+
+                    <div class="news-placeholder"></div>
+
+                    <div>
+
+                        <h3>Новости Тарханки</h3>
+
+                        <p>
+                            Здесь будут появляться новости
+                            и события нашего села.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="news-item">
+
+                    <div class="news-placeholder"></div>
+
+                    <div>
+
+                        <h3>Жизнь села</h3>
+
+                        <p>
+                            Новости жителей, мероприятия
+                            и важные события.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- Объявления -->
+
+            <section class="info-card">
+
+                <div class="block-title">
+
+                    <h2>Объявления</h2>
+
+                    <a href="ads.html">Все объявления →</a>
+
+                </div>
+
+
+                <div class="ad-item">
+
+                    <div class="ad-icon">⌂</div>
+
+                    <div>
+
+                        <h3>Доска объявлений</h3>
+
+                        <p>
+                            Продажа, услуги, работа,
+                            покупка и другие объявления.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ad-item">
+
+                    <div class="ad-icon">+</div>
+
+                    <div>
+
+                        <h3>Разместить объявление</h3>
+
+                        <p>
+                            В будущем жители смогут
+                            самостоятельно добавлять объявления.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
 
 
         <!-- Участие жителей -->
 
         <section class="participate">
 
-            <h2>🤝 Хотите поделиться информацией?</h2>
+            <h2>Сохраним историю Тарханки вместе</h2>
 
             <p>
-                Жители Тарханки смогут самостоятельно
-                предлагать новости, фотографии и объявления.
+                У вас есть старая фотография, семейная история,
+                документ или воспоминание о селе?
             </p>
 
-            <button>Предложить новость</button>
-            <button>Добавить объявление</button>
+            <button>Поделиться историей</button>
 
         </section>
+
 
     </main>
 
@@ -179,13 +343,18 @@
 
     <footer>
 
-        <p>Портал села Тарханка</p>
+        <p>© 2026 Портал села Тарханка</p>
 
         <p>
-            История • Люди • События • Жизнь села
+            Сохраняем прошлое — создаём будущее
+        </p>
+
+        <p>
+            Тарханка • История • Люди • Память
         </p>
 
     </footer>
+
 
 </body>
 </html>
