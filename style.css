@@ -1744,3 +1744,344 @@ footer {
         padding: 18px;
     }
 }
+/* ==================================================
+   СТРАНИЦА «ЛЮДИ»
+   ================================================== */
+
+.people-page {
+    max-width: 1100px;
+}
+
+
+/* ---------- Вступление ---------- */
+
+.people-intro {
+    max-width: 820px;
+
+    margin: 25px auto 55px;
+
+    padding: 42px 50px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(249, 242, 220, 0.72),
+            rgba(238, 226, 198, 0.72)
+        );
+
+    border: 1px solid rgba(130, 111, 77, 0.35);
+
+    border-radius: 3px;
+
+    box-shadow:
+        0 8px 22px rgba(79, 65, 43, 0.10);
+}
+
+.people-intro h2,
+.people-section h2,
+.families-section h2,
+.people-stories h2,
+.people-memory h2 {
+    margin: 0 0 18px;
+
+    color: #3f3a2e;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 38px;
+
+    font-weight: 400;
+}
+
+.people-intro .decor-line {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.people-intro p {
+    color: #4a463d;
+
+    font-size: 16px;
+
+    font-weight: 530;
+}
+
+.people-lead {
+    font-size: 19px !important;
+}
+
+
+/* ---------- Раздел известных людей ---------- */
+
+.people-section {
+    margin-bottom: 55px;
+}
+
+.people-heading {
+    margin-bottom: 28px;
+}
+
+.people-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* ---------- Карточка человека ---------- */
+
+.person-card {
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(245, 237, 216, 0.80),
+            rgba(231, 217, 187, 0.80)
+        );
+
+    border: 1px solid rgba(128, 106, 70, 0.35);
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 7px 18px rgba(67, 55, 38, 0.10);
+}
+
+.person-photo-placeholder {
+    height: 245px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(63, 71, 58, 0.30),
+            rgba(45, 52, 42, 0.45)
+        ),
+        #9d9d8d;
+
+    color: #eee6d2;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 21px;
+    font-style: italic;
+}
+
+.person-photo-placeholder.person-old {
+    background:
+        linear-gradient(
+            rgba(102, 83, 55, 0.30),
+            rgba(69, 57, 41, 0.45)
+        ),
+        #aaa18d;
+}
+
+.person-card-content {
+    padding: 27px 28px 30px;
+}
+
+.person-years {
+    margin: 0 0 5px;
+
+    color: #78694d;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+.person-card h3 {
+    margin: 0 0 7px;
+
+    color: #34402f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    font-weight: 800;
+}
+
+.person-role {
+    margin: 0 0 20px !important;
+
+    color: #647052 !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+
+    font-style: italic;
+}
+
+.person-card p {
+    color: #4b473e;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    font-weight: 530;
+}
+
+.person-more {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding-top: 9px;
+
+    border-top: 1px solid rgba(91, 77, 54, 0.25);
+
+    color: #657054;
+
+    font-size: 13px;
+
+    font-style: italic;
+}
+
+
+/* ---------- Первые семьи ---------- */
+
+.families-section,
+.people-stories,
+.people-memory {
+    margin-bottom: 48px;
+
+    padding: 38px 42px;
+
+    background:
+        linear-gradient(
+            rgba(247, 239, 217, 0.72),
+            rgba(233, 220, 192, 0.72)
+        );
+
+    border: 1px solid rgba(130, 111, 77, 0.30);
+
+    border-radius: 3px;
+}
+
+.families-section p,
+.people-stories p,
+.people-memory p {
+    color: #4a463d;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    font-weight: 530;
+}
+
+
+/* ---------- Фамилии ---------- */
+
+.family-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 25px 0;
+}
+
+.family-list span {
+    padding: 8px 14px;
+
+    background-color: rgba(76, 89, 64, 0.10);
+
+    border: 1px solid rgba(76, 89, 64, 0.27);
+
+    border-radius: 3px;
+
+    color: #46523d;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+}
+
+.family-note {
+    color: #706553 !important;
+
+    font-size: 14px !important;
+
+    font-style: italic;
+}
+
+
+/* ---------- Адаптация ---------- */
+
+@media (max-width: 800px) {
+
+    .people-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .people-intro,
+    .families-section,
+    .people-stories,
+    .people-memory {
+        padding: 28px 21px;
+    }
+
+    .people-intro h2,
+    .people-section h2,
+    .families-section h2,
+    .people-stories h2,
+    .people-memory h2 {
+        font-size: 30px;
+    }
+
+    .person-photo-placeholder {
+        height: 210px;
+    }
+
+    .person-card-content {
+        padding: 22px 20px 25px;
+    }
+
+    .person-card h3 {
+        font-size: 23px;
+    }
+
+}
+.person-photo {
+    width: 100%;
+    height: 330px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-color: #9b917d;
+}
+
+.person-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+
+    filter: sepia(18%) contrast(96%);
+}
