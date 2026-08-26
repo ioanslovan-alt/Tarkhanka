@@ -849,27 +849,20 @@ a {
 
 @media (max-width: 720px) {
 
-    /* ---------- Верхняя шапка ---------- */
-
     .forest-background {
         width: 100%;
-        height: 82px;
-        min-height: 0;
+        height: 110px;
 
         padding: 0;
 
-        background-repeat: no-repeat;
+        background-size: cover;
         background-position: center center;
-
-        /*
-           Растягиваем изображение точно
-           по размеру шапки.
-           Поэтому никаких полос и отступов.
-        */
-        background-size: 100% 100%;
+        background-repeat: no-repeat;
 
         overflow: hidden;
     }
+
+}
 
 
     /* ---------- Меню ---------- */
@@ -1006,15 +999,14 @@ a {
 
 @media (max-width: 470px) {
 
-    /* ---------- Верхняя шапка ---------- */
-
     .forest-background {
-        height: 72px;
+        height: 95px;
 
-        background-size: 100% 100%;
-        background-position: center;
+        background-size: cover;
+        background-position: center center;
     }
 
+}
 
     /* ---------- Главное фото ---------- */
 
@@ -1060,7 +1052,6 @@ a {
     .update-content p {
         font-size: 14px;
     }
-
 }
 /* ==========================================================
    24. СТРАНИЦА "ИСТОРИЯ"
