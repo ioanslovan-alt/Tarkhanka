@@ -847,20 +847,26 @@ a {
    22. МОБИЛЬНЫЕ УСТРОЙСТВА
 ========================================================== */
 
-@media (max-width: 720px) {
+@media (max-width: 470px) {
 
-    /* ---------- Шапка ---------- */
+   /* ---------- Шапка на телефоне ---------- */
 
-    .forest-background {
-        height: 135px;
-        min-height: 0;
+.forest-background {
+    width: 100%;
 
-        padding: 0;
+    height: 110px;
+    min-height: 0;
 
-        background-position: center;
-        background-size: cover;
-    }
+    aspect-ratio: 6 / 1;
 
+    padding: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    background-color: #d8c59e;
+}
 
     /* ---------- Меню ---------- */
 
