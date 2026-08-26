@@ -1838,7 +1838,7 @@ a {
 
 .history-page-header {
     width: 100%;
-    height: 75px;
+    height: 65px;
 
     background-image:
         url("images/village/history-header.png");
@@ -1854,7 +1854,7 @@ a {
 @media (max-width: 1150px) {
 
     .history-page-header {
-        height: 190px;
+        height: 75px;
     }
 
 }
@@ -1865,7 +1865,7 @@ a {
 @media (max-width: 720px) {
 
     .history-page-header {
-        height: 135px;
+        height: 65px;
     }
 
 }
