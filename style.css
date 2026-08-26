@@ -856,6 +856,302 @@ a {
     }
 }
 
+/* ==========================================================
+   БЛОК "СВЯЗАТЬСЯ С НАМИ"
+========================================================== */
+
+.contact-invite {
+    margin-top: 30px;
+    padding: 25px 30px;
+
+    background:
+        linear-gradient(
+            rgba(239, 222, 187, 0.96),
+            rgba(218, 190, 143, 0.96)
+        );
+
+    border: 1px solid #a98a5f;
+    border-radius: 8px;
+
+    box-shadow:
+        0 3px 10px rgba(45, 30, 15, 0.25);
+}
+
+.contact-invite-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.contact-invite-text h2 {
+    margin: 0 0 7px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+
+    color: #382512;
+}
+
+.contact-invite-text p {
+    max-width: 750px;
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: #57432b;
+}
+
+.contact-button {
+    flex-shrink: 0;
+
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border: 1px solid #75552d;
+    border-radius: 4px;
+
+    background: #5b3d1f;
+
+    color: #f5e6c8;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s,
+        transform 0.2s;
+}
+
+.contact-button:hover {
+    background: #704d27;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================
+   СТРАНИЦА "КОНТАКТЫ"
+========================================================== */
+
+.contacts-page {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 25px 0 45px;
+}
+
+
+/* ---------- Основной лист ---------- */
+
+.contacts-paper {
+    position: relative;
+
+    padding: 45px 55px;
+
+    background:
+        linear-gradient(
+            rgba(246, 232, 199, 0.97),
+            rgba(229, 207, 165, 0.97)
+        );
+
+    border: 1px solid #a98a5f;
+    border-radius: 6px;
+
+    box-shadow:
+        0 5px 18px rgba(50, 32, 15, 0.28);
+
+    color: #3c2a18;
+}
+
+
+/* ---------- Заголовок ---------- */
+
+.contacts-heading {
+    max-width: 760px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.contacts-small-title {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #806541;
+}
+
+.contacts-heading h1 {
+    margin: 0 0 16px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    font-weight: normal;
+
+    color: #382512;
+}
+
+.contacts-heading p {
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #5b4630;
+}
+
+
+/* ---------- Разделительная линия ---------- */
+
+.contacts-divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 32px 0;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #806541 15%,
+            #806541 85%,
+            transparent
+        );
+}
+
+
+/* ---------- Блок помощи ---------- */
+
+.contacts-help {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.contacts-help h2,
+.contacts-details h2 {
+    margin: 0 0 15px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+
+    color: #382512;
+}
+
+.contacts-help p {
+    margin: 0 0 15px;
+
+    line-height: 1.6;
+}
+
+.contacts-help ul {
+    margin: 0;
+    padding-left: 24px;
+}
+
+.contacts-help li {
+    margin-bottom: 8px;
+
+    line-height: 1.5;
+}
+
+.contacts-help li::marker {
+    color: #79562d;
+}
+
+
+/* ---------- Контактные данные ---------- */
+
+.contacts-details {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 14px;
+    padding: 17px 20px;
+
+    background:
+        rgba(255, 248, 229, 0.48);
+
+    border: 1px solid
+        rgba(126, 91, 49, 0.38);
+
+    border-radius: 5px;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    flex: 0 0 45px;
+
+    border: 1px solid #8c693d;
+    border-radius: 50%;
+
+    font-size: 21px;
+
+    color: #593b1d;
+}
+
+.contact-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #806541;
+}
+
+.contact-row a {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+
+    color: #4d3219;
+
+    text-decoration: none;
+}
+
+.contact-row a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- Примечание ---------- */
+
+.contacts-note {
+    max-width: 780px;
+
+    margin: 35px auto 0;
+    padding: 18px 22px;
+
+    border-left: 4px solid #80603a;
+
+    background:
+        rgba(255, 248, 229, 0.45);
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #59442d;
+}
 
 /* ==========================================================
    22. МОБИЛЬНЫЕ УСТРОЙСТВА
@@ -866,7 +1162,7 @@ a {
     /* ШАПКУ НЕ МЕНЯЕМ: оставляем текущий размер */
     .forest-background {
         width: 100%;
-        height: 65px;
+        height: 75px;
 
         padding: 0;
 
@@ -875,8 +1171,71 @@ a {
         background-repeat: no-repeat;
 
         overflow: hidden;
+        .contact-invite {
+    padding: 20px;
+}
+
+.contact-invite-inner {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 18px;
+}
+
+.contact-button {
+    width: 100%;
+
+    text-align: center;
+}
+    /* ---------- Контакты ---------- */
+
+    .contacts-page {
+        padding: 12px 0 30px;
     }
 
+    .contacts-paper {
+        padding: 30px 22px;
+    }
+
+    .contacts-heading h1 {
+        font-size: 32px;
+    }
+
+    .contacts-heading p {
+        font-size: 16px;
+    }
+
+    .contacts-divider {
+        margin: 25px 0;
+    }
+
+    .contacts-help h2,
+    .contacts-details h2 {
+        font-size: 22px;
+    }
+
+    .contact-row {
+        padding: 14px;
+        gap: 13px;
+    }
+
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+
+        flex-basis: 40px;
+
+        font-size: 18px;
+    }
+
+    .contact-row a {
+        font-size: 16px;
+    }
+
+    .contacts-note {
+        margin-top: 25px;
+        padding: 15px 17px;
+    }
 
     /* ---------- Меню ---------- */
 
@@ -1905,6 +2264,527 @@ a {
 
     .history-page-header {
         height: 65px;
+    }
+
+}
+/* ==========================================================
+   СТРАНИЦА "ЛЮДИ"
+========================================================== */
+
+.people-page {
+    max-width: 1250px;
+}
+
+
+/* ==========================================================
+   ВСТУПЛЕНИЕ
+========================================================== */
+
+.people-intro {
+    max-width: 950px;
+
+    margin: 0 auto 36px;
+
+    padding: 38px 42px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(246, 236, 210, 0.96),
+            rgba(225, 204, 165, 0.96)
+        );
+
+    border: 1px solid #a98a5f;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 14px rgba(58, 38, 20, 0.22);
+}
+
+
+.people-intro h1 {
+    margin: 0;
+
+    color: #342617;
+
+    font-size:
+        clamp(
+            32px,
+            4vw,
+            46px
+        );
+}
+
+
+.people-lead {
+    margin-top: 0;
+
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   РАЗДЕЛЫ
+========================================================== */
+
+.people-section {
+    margin-bottom: 40px;
+}
+
+
+.people-heading {
+    max-width: 850px;
+
+    margin: 0 auto 24px;
+
+    text-align: center;
+}
+
+
+.people-heading h2,
+.people-stories h2,
+.people-memory h2,
+.people-family-link h2 {
+    margin: 0 0 12px;
+
+    color: #3c2917;
+
+    font-size: 30px;
+}
+
+
+.people-heading p {
+    margin: 0 auto;
+
+    max-width: 750px;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   СЕТКА КАРТОЧЕК
+========================================================== */
+
+.people-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* ==========================================================
+   КАРТОЧКА ЧЕЛОВЕКА
+========================================================== */
+
+.person-card {
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns:
+        210px 1fr;
+
+    background:
+        linear-gradient(
+            rgba(245, 235, 211, 0.97),
+            rgba(226, 207, 173, 0.97)
+        );
+
+    border: 1px solid #a78a62;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 12px rgba(55, 36, 18, 0.2);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+
+.person-card:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(55, 36, 18, 0.28);
+}
+
+
+/* ==========================================================
+   ФОТО
+========================================================== */
+
+.person-photo {
+    min-height: 100%;
+
+    background: #c4ae87;
+}
+
+
+.person-photo img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    filter:
+        sepia(24%)
+        saturate(82%);
+}
+
+
+/* ==========================================================
+   ЗАГЛУШКА ФОТО
+========================================================== */
+
+.person-photo-placeholder {
+    min-height: 330px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #d8c4a1;
+
+    font-size: 22px;
+
+    background:
+        linear-gradient(
+            rgba(68, 48, 28, 0.92),
+            rgba(39, 27, 16, 0.98)
+        );
+}
+
+
+.person-old {
+    position: relative;
+}
+
+
+.person-old::before {
+    content: "❦";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform:
+        translate(-50%, -85%);
+
+    color:
+        rgba(225, 207, 172, 0.2);
+
+    font-size: 100px;
+}
+
+
+.person-old span {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ==========================================================
+   ТЕКСТ КАРТОЧКИ
+========================================================== */
+
+.person-card-content {
+    padding: 26px 27px;
+}
+
+
+.person-years {
+    margin: 0 0 5px;
+
+    color: #80613c;
+
+    font-size: 13px;
+
+    letter-spacing: 0.07em;
+}
+
+
+.person-card-content h3 {
+    margin: 0 0 7px;
+
+    color: #3a2816;
+
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+
+.person-role {
+    margin: 0 0 16px;
+
+    color: #687126;
+
+    font-weight: 700;
+}
+
+
+.person-card-content p {
+    margin: 0 0 13px;
+
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+
+.person-more {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    color: #526020;
+
+    font-size: 14px;
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================================
+   ОБЫЧНЫЕ ЖИТЕЛИ
+========================================================== */
+
+.people-stories,
+.people-memory {
+    max-width: 950px;
+
+    margin: 35px auto;
+
+    padding: 32px 36px;
+
+    background:
+        rgba(236, 219, 184, 0.84);
+
+    border: 1px solid #a88a61;
+    border-radius: 7px;
+
+    box-shadow:
+        0 3px 10px rgba(54, 36, 18, 0.16);
+}
+
+
+.people-stories p,
+.people-memory p {
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+
+/* ==========================================================
+   ПЕРЕХОД К РОДАМ
+========================================================== */
+
+.people-family-link {
+    max-width: 950px;
+
+    margin: 35px auto;
+
+    padding: 30px 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 35px;
+
+    background:
+        linear-gradient(
+            rgba(234, 216, 179, 0.96),
+            rgba(210, 184, 138, 0.96)
+        );
+
+    border: 1px solid #99774b;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 12px rgba(53, 35, 17, 0.18);
+}
+
+
+.people-family-link > div {
+    max-width: 680px;
+}
+
+
+.people-family-link p {
+    margin-bottom: 0;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   КНОПКА "НАВЕРХ"
+========================================================== */
+
+.back-to-top {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+    opacity: 0;
+
+    border: 1px solid #80613b;
+    border-radius: 50%;
+
+    background: #4a321d;
+
+    color: #f0dfbd;
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+    z-index: 1000;
+
+    transition:
+        opacity 0.2s,
+        transform 0.2s,
+        visibility 0.2s;
+}
+
+
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.back-to-top:hover {
+    transform:
+        translateY(-3px);
+}
+
+
+/* ==========================================================
+   ПЛАНШЕТ
+========================================================== */
+
+@media (max-width: 1050px) {
+
+    .people-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .person-card {
+        grid-template-columns:
+            220px 1fr;
+    }
+
+}
+
+
+/* ==========================================================
+   ТЕЛЕФОН
+========================================================== */
+
+@media (max-width: 650px) {
+
+    .people-intro {
+        padding: 27px 21px;
+    }
+
+
+    .people-intro h1 {
+        font-size: 31px;
+    }
+
+
+    .people-lead {
+        font-size: 17px;
+    }
+
+
+    .people-heading h2,
+    .people-stories h2,
+    .people-memory h2,
+    .people-family-link h2 {
+        font-size: 25px;
+    }
+
+
+    .person-card {
+        display: block;
+    }
+
+
+    .person-photo {
+        height: 340px;
+    }
+
+
+    .person-photo-placeholder {
+        min-height: 220px;
+    }
+
+
+    .person-card-content {
+        padding: 22px 20px;
+    }
+
+
+    .person-card-content h3 {
+        font-size: 22px;
+    }
+
+
+    .people-stories,
+    .people-memory {
+        padding: 25px 21px;
+    }
+
+
+    .people-family-link {
+        padding: 25px 21px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+
+    .people-family-link .history-button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+
+        width: 40px;
+        height: 40px;
     }
 
 }
