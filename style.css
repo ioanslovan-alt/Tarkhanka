@@ -1162,7 +1162,7 @@ a {
     /* ШАПКУ НЕ МЕНЯЕМ: оставляем текущий размер */
     .forest-background {
         width: 100%;
-        height: 85px;
+        height: 100px;
 
         padding: 0;
 
@@ -1171,7 +1171,9 @@ a {
         background-repeat: no-repeat;
 
         overflow: hidden;
-        .contact-invite {
+    }
+
+    .contact-invite {
     padding: 20px;
 }
 
@@ -2787,6 +2789,8 @@ a {
         height: 40px;
     }
 
+}
+
 /* ==========================================================
    ИСПРАВЛЕНИЕ КАРТОЧЕК ГЛАВНОЙ НА МОБИЛЬНЫХ
 ========================================================== */
@@ -2912,4 +2916,56 @@ a {
         grid-template-columns: 1fr;
     }
 
+}
+
+/* ==========================================================
+   КЛИКАБЕЛЬНЫЕ КАРТОЧКИ ГЛАВНОЙ
+========================================================== */
+
+a.portal-card {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-link {
+    margin-top: auto;
+    color: #4d5b22;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+a.portal-card:focus-visible {
+    outline: 3px solid #697331;
+    outline-offset: 3px;
+}
+
+@media (max-width: 720px) {
+    .card-link {
+        font-size: 13px;
+    }
+}
+
+/* ==========================================================
+   КЛИКАБЕЛЬНЫЕ КАРТОЧКИ ГЛАВНОЙ
+========================================================== */
+
+a.portal-card {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: auto;
+
+    color: #4d5b22;
+
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+a.portal-card:hover .card-link {
+    color: #344015;
 }
