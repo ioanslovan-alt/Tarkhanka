@@ -511,11 +511,14 @@ a {
 
 
 .portal-card {
+    min-width: 0;
+
     display: flex;
     flex-direction: column;
 
-    min-width: 0;
     overflow: hidden;
+
+    aspect-ratio: 1 / 1;
 
     border: 1px solid #a98a5f;
     border-radius: 7px;
@@ -535,9 +538,9 @@ a {
         box-shadow 0.2s;
 }
 
+
 .portal-card:hover {
-    transform:
-        translateY(-4px);
+    transform: translateY(-4px);
 
     box-shadow:
         0 8px 17px
@@ -582,7 +585,7 @@ a {
 
 .card-image {
     width: 100%;
-    aspect-ratio: 16 / 10;
+    height: 42%;
 
     overflow: hidden;
     flex-shrink: 0;
@@ -620,25 +623,26 @@ a {
 ========================================================== */
 
 .card-body {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
     padding: 12px 14px 15px;
 }
 
-.card-body p {
-    min-height: 0;
 
+.card-body p {
     margin: 0 0 10px;
 
     font-size: 14px;
     line-height: 1.4;
-}
 
-.card-body p {
-    min-height: 78px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 
-    margin: 0 0 12px;
-
-    font-size: 14px;
-    line-height: 1.45;
+    overflow: hidden;
 }
 
 
@@ -819,6 +823,7 @@ a {
 
 @media (max-width: 1150px) {
 
+    /* ШАПКУ НЕ МЕНЯЕМ: оставляем текущий размер */
     .forest-background {
         height: 190px;
     }
@@ -830,25 +835,25 @@ a {
 
 
     .portal-sections {
-        grid-template-columns:
-            repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+    }
 
-        gap: 10px;
+
+    .portal-card {
+        aspect-ratio: 1 / 1;
     }
 
 
     .footer-container {
-        grid-template-columns:
-            1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
 
     .footer-contacts {
         padding-left: 0;
-
         border-left: none;
     }
-
 }
 
 
@@ -858,6 +863,7 @@ a {
 
 @media (max-width: 720px) {
 
+    /* ШАПКУ НЕ МЕНЯЕМ: оставляем текущий размер */
     .forest-background {
         width: 100%;
         height: 65px;
@@ -870,8 +876,6 @@ a {
 
         overflow: hidden;
     }
-
-}
 
 
     /* ---------- Меню ---------- */
@@ -945,8 +949,7 @@ a {
 
 
     .update-item {
-        grid-template-columns:
-            30px 1fr 14px;
+        grid-template-columns: 30px 1fr 14px;
 
         gap: 8px;
 
@@ -954,23 +957,33 @@ a {
     }
 
 
-    /* ---------- Карточки ---------- */
+    /* ---------- Карточки разделов ---------- */
 
     .portal-sections {
-        grid-template-columns:
-            repeat(2, 1fr);
-
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
     }
 
 
+    .portal-card {
+        aspect-ratio: auto;
+        min-height: 245px;
+    }
+
+
+    .portal-card:last-child {
+        grid-column: 1 / -1;
+        min-height: 230px;
+    }
+
+
     .card-image {
-        height: 105px;
+        height: 110px;
     }
 
 
     .card-body p {
-        min-height: auto;
+        -webkit-line-clamp: 3;
     }
 
 
@@ -988,7 +1001,6 @@ a {
     .footer-contribute,
     .footer-contacts {
         padding-left: 0;
-
         border-left: none;
     }
 
@@ -998,7 +1010,6 @@ a {
 
         padding: 15px 20px;
     }
-
 }
 
 
@@ -1008,6 +1019,7 @@ a {
 
 @media (max-width: 470px) {
 
+    /* ШАПКУ НЕ МЕНЯЕМ: оставляем текущий размер */
     .forest-background {
         height: 95px;
 
@@ -1015,9 +1027,6 @@ a {
         background-position: center center;
     }
 
-}
-
-    /* ---------- Главное фото ---------- */
 
     .home-hero {
         min-height: 390px;
@@ -1039,19 +1048,27 @@ a {
     }
 
 
-    /* ---------- Карточки ---------- */
-
     .portal-sections {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+
+    .portal-card {
+        min-height: 235px;
+    }
+
+
+    .portal-card:last-child {
+        grid-column: 1 / -1;
+        min-height: 220px;
     }
 
 
     .card-image {
-        height: 165px;
+        height: 105px;
     }
 
-
-    /* ---------- Обновления ---------- */
 
     .updates-title h2 {
         font-size: 21px;
@@ -1062,6 +1079,8 @@ a {
         font-size: 14px;
     }
 }
+
+
 /* ==========================================================
    24. СТРАНИЦА "ИСТОРИЯ"
 ========================================================== */
