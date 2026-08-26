@@ -501,23 +501,23 @@ a {
 
 .portal-sections {
     display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
 
-    grid-template-columns:
-        repeat(5, 1fr);
+    gap: 14px;
+    margin-top: 22px;
 
-    gap: 7px;
-
-    margin-top: 20px;
+    align-items: stretch;
 }
 
 
 .portal-card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
     overflow: hidden;
 
-    border:
-        1px solid
-        #a98a5f;
-
+    border: 1px solid #a98a5f;
     border-radius: 7px;
 
     background:
@@ -534,7 +534,6 @@ a {
         transform 0.2s,
         box-shadow 0.2s;
 }
-
 
 .portal-card:hover {
     transform:
@@ -582,9 +581,11 @@ a {
 ========================================================== */
 
 .card-image {
-    height: 120px;
+    width: 100%;
+    aspect-ratio: 16 / 10;
 
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 
@@ -619,9 +620,17 @@ a {
 ========================================================== */
 
 .card-body {
-    padding: 13px 14px 17px;
+    padding: 12px 14px 15px;
 }
 
+.card-body p {
+    min-height: 0;
+
+    margin: 0 0 10px;
+
+    font-size: 14px;
+    line-height: 1.4;
+}
 
 .card-body p {
     min-height: 78px;
@@ -1838,7 +1847,7 @@ a {
 
 .history-page-header {
     width: 100%;
-    height: 65px;
+    height: 180px;
 
     background-image:
         url("images/village/history-header.png");
@@ -1876,7 +1885,7 @@ a {
 @media (max-width: 470px) {
 
     .history-page-header {
-        height: 110px;
+        height: 65px;
     }
 
 }
