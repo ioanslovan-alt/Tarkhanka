@@ -2984,3 +2984,2092 @@ a.portal-card:hover .card-link {
     background-position: center;
     background-size: cover;
 }
+/* ==========================================================
+   СТРАНИЦА "РОДЫ"
+========================================================== */
+
+.families-page {
+    max-width: 1250px;
+}
+
+
+/* ==========================================================
+   ВСТУПЛЕНИЕ
+========================================================== */
+
+.families-intro {
+    max-width: 980px;
+
+    margin: 0 auto 38px;
+    padding: 40px 44px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(246, 235, 209, 0.97),
+            rgba(224, 201, 159, 0.97)
+        );
+
+    border: 1px solid #a98a5f;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 14px rgba(55, 36, 18, 0.22);
+}
+
+
+.families-intro h1 {
+    margin: 0;
+
+    color: #382614;
+
+    font-size:
+        clamp(
+            34px,
+            4vw,
+            48px
+        );
+}
+
+
+.families-lead {
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+
+/* ==========================================================
+   ЗАГОЛОВОК РАЗДЕЛА
+========================================================== */
+
+.families-section {
+    margin-bottom: 40px;
+}
+
+
+.families-heading {
+    max-width: 850px;
+
+    margin: 0 auto 28px;
+
+    text-align: center;
+}
+
+
+.families-heading h2,
+.family-other h2,
+.family-research h2 {
+    margin: 0 0 12px;
+
+    color: #3b2917;
+
+    font-size: 30px;
+}
+
+
+.families-heading p {
+    margin: 0 auto;
+
+    max-width: 760px;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   СЕТКА РОДОВ
+========================================================== */
+
+.families-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* ==========================================================
+   КАРТОЧКА РОДА
+========================================================== */
+
+.family-card {
+    position: relative;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns:
+        95px 1fr;
+
+    min-height: 330px;
+
+    background:
+        linear-gradient(
+            rgba(244, 231, 202, 0.97),
+            rgba(222, 197, 154, 0.97)
+        );
+
+    border: 1px solid #a0845f;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 12px rgba(53, 34, 17, 0.18);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+
+.family-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(53, 34, 17, 0.28);
+}
+
+
+/* ==========================================================
+   БУКВИЦА
+========================================================== */
+
+.family-letter {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #ead9b4;
+
+    font-size: 56px;
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            #51381f,
+            #2f2013
+        );
+
+    border-right:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+}
+
+
+/* ==========================================================
+   СОДЕРЖИМОЕ КАРТОЧКИ
+========================================================== */
+
+.family-content {
+    padding: 27px 28px 25px;
+}
+
+
+.family-period {
+    margin: 0 0 6px;
+
+    color: #7d603b;
+
+    font-size: 13px;
+
+    letter-spacing: 0.05em;
+
+    text-transform: uppercase;
+}
+
+
+.family-content h3 {
+    margin: 0 0 14px;
+
+    color: #372513;
+
+    font-size: 27px;
+}
+
+
+.family-content p {
+    margin: 0 0 13px;
+
+    font-size: 15px;
+    line-height: 1.58;
+}
+
+
+.family-status {
+    display: inline-block;
+
+    margin-top: 7px;
+    padding: 6px 10px;
+
+    color: #5b4a2f;
+
+    font-size: 13px;
+
+    background:
+        rgba(255, 248, 226, 0.55);
+
+    border:
+        1px solid
+        rgba(116, 84, 45, 0.35);
+
+    border-radius: 4px;
+}
+
+
+/* ==========================================================
+   ВЫДЕЛЕННАЯ КАРТОЧКА
+========================================================== */
+
+.family-featured {
+    border-color: #7d673f;
+
+    box-shadow:
+        0 5px 15px rgba(55, 35, 17, 0.25);
+}
+
+
+.family-featured .family-letter {
+    background:
+        linear-gradient(
+            #5b4326,
+            #342316
+        );
+}
+
+
+/* ==========================================================
+   ДРУГИЕ ФАМИЛИИ
+========================================================== */
+
+.family-other {
+    max-width: 980px;
+
+    margin: 40px auto;
+
+    padding: 34px 36px;
+
+    text-align: center;
+
+    background:
+        rgba(235, 218, 183, 0.86);
+
+    border: 1px solid #a88b63;
+    border-radius: 8px;
+
+    box-shadow:
+        0 3px 10px rgba(52, 34, 17, 0.16);
+}
+
+
+.surname-list {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 22px 0 20px;
+}
+
+
+.surname-list span {
+    padding: 8px 14px;
+
+    color: #49341d;
+
+    background:
+        rgba(255, 248, 229, 0.58);
+
+    border: 1px solid
+        rgba(121, 91, 55, 0.38);
+
+    border-radius: 18px;
+
+    font-size: 14px;
+}
+
+
+.family-warning {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    color: #62503a;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   ГЕНЕАЛОГИЧЕСКИЙ БЛОК
+========================================================== */
+
+.family-research {
+    max-width: 980px;
+
+    margin: 42px auto;
+
+    padding: 32px 36px;
+
+    display: grid;
+
+    grid-template-columns:
+        90px 1fr;
+
+    gap: 28px;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(232, 214, 177, 0.96),
+            rgba(207, 179, 132, 0.96)
+        );
+
+    border: 1px solid #99784e;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 12px rgba(52, 34, 17, 0.18);
+}
+
+
+.family-research-symbol {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+
+    color: #ead9b5;
+
+    font-size: 42px;
+
+    background: #4a321d;
+
+    border-radius: 50%;
+}
+
+
+.family-research p {
+    margin-bottom: 12px;
+
+    line-height: 1.65;
+}
+
+
+/* ==========================================================
+   МОБИЛЬНАЯ АДАПТАЦИЯ
+========================================================== */
+
+@media (max-width: 850px) {
+
+    .families-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .families-intro {
+        padding: 28px 21px;
+    }
+
+
+    .families-intro h1 {
+        font-size: 31px;
+    }
+
+
+    .families-lead {
+        font-size: 17px;
+    }
+
+
+    .families-heading h2,
+    .family-other h2,
+    .family-research h2 {
+        font-size: 25px;
+    }
+
+
+    .family-card {
+        display: block;
+    }
+
+
+    .family-letter {
+        min-height: 80px;
+
+        border-right: none;
+
+        border-bottom:
+            1px solid
+            rgba(255, 255, 255, 0.08);
+
+        font-size: 44px;
+    }
+
+
+    .family-content {
+        padding: 23px 20px;
+    }
+
+
+    .family-content h3 {
+        font-size: 24px;
+    }
+
+
+    .family-other {
+        padding: 26px 20px;
+    }
+
+
+    .family-research {
+        padding: 26px 21px;
+
+        grid-template-columns: 1fr;
+
+        text-align: left;
+    }
+
+
+    .family-research-symbol {
+        width: 65px;
+        height: 65px;
+
+        font-size: 34px;
+    }
+
+}
+/* ==========================================================
+   СТРАНИЦА "ФОТОАРХИВ"
+========================================================== */
+
+.photos-page {
+    max-width: 1250px;
+}
+
+
+/* ==========================================================
+   ВСТУПЛЕНИЕ
+========================================================== */
+
+.photos-intro {
+    max-width: 980px;
+
+    margin: 0 auto 35px;
+
+    padding: 38px 42px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(246, 235, 209, 0.97),
+            rgba(224, 201, 159, 0.97)
+        );
+
+    border: 1px solid #a98a5f;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 14px
+        rgba(55, 36, 18, 0.22);
+}
+
+
+.photos-intro h1 {
+    margin: 0;
+
+    color: #382614;
+
+    font-size:
+        clamp(
+            34px,
+            4vw,
+            48px
+        );
+}
+
+
+.photos-lead {
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+
+/* ==========================================================
+   НАВИГАЦИЯ
+========================================================== */
+
+.photos-navigation {
+    max-width: 1100px;
+
+    margin: 0 auto 38px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+.photos-navigation a {
+    padding: 9px 14px;
+
+    color: #49351f;
+
+    font-size: 14px;
+
+    background:
+        rgba(232, 214, 179, 0.9);
+
+    border:
+        1px solid
+        rgba(116, 85, 47, 0.38);
+
+    border-radius: 18px;
+}
+
+
+.photos-navigation a:hover {
+    background: #e2c995;
+}
+
+
+/* ==========================================================
+   РАЗДЕЛ ФОТОАРХИВА
+========================================================== */
+
+.photo-category {
+    margin-bottom: 45px;
+}
+
+
+.photo-category-heading {
+    max-width: 850px;
+
+    margin: 0 auto 24px;
+
+    text-align: center;
+}
+
+
+.photo-category-heading h2 {
+    margin: 0 0 10px;
+
+    color: #3b2917;
+
+    font-size: 30px;
+}
+
+
+.photo-category-heading p {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   СЕТКА ФОТО
+========================================================== */
+
+.photo-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* ==========================================================
+   ФОТОГРАФИЯ
+========================================================== */
+
+.archive-photo {
+    margin: 0;
+
+    overflow: hidden;
+
+    background:
+        #e4cfa5;
+
+    border: 1px solid #9d7e56;
+    border-radius: 6px;
+
+    box-shadow:
+        0 4px 10px
+        rgba(50, 32, 15, 0.2);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+
+.archive-photo:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 16px
+        rgba(50, 32, 15, 0.28);
+}
+
+
+.archive-photo img {
+    display: block;
+
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+
+    filter:
+        sepia(25%)
+        saturate(82%);
+}
+
+
+.archive-photo figcaption {
+    min-height: 60px;
+
+    padding: 12px 14px;
+
+    color: #55412b;
+
+    font-size: 13px;
+    line-height: 1.45;
+
+    background:
+        linear-gradient(
+            #ead9b7,
+            #d8bd8f
+        );
+}
+
+
+/* ==========================================================
+   ЗАГЛУШКА
+========================================================== */
+
+.archive-photo-placeholder {
+    height: 240px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    color: #cdbb98;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            #51402d,
+            #302419
+        );
+}
+
+
+/* ==========================================================
+   ПЛАНШЕТ
+========================================================== */
+
+@media (max-width: 950px) {
+
+    .photo-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ==========================================================
+   ТЕЛЕФОН
+========================================================== */
+
+@media (max-width: 650px) {
+
+    .photos-intro {
+        padding: 28px 21px;
+    }
+
+
+    .photos-intro h1 {
+        font-size: 31px;
+    }
+
+
+    .photos-lead {
+        font-size: 17px;
+    }
+
+
+    .photos-navigation {
+        justify-content: flex-start;
+    }
+
+
+    .photo-category-heading h2 {
+        font-size: 25px;
+    }
+
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .archive-photo img,
+    .archive-photo-placeholder {
+        height: 230px;
+    }
+
+}
+/* ==========================================================
+   СТРАНИЦА "ДОКУМЕНТЫ"
+========================================================== */
+
+.documents-page {
+    max-width: 1250px;
+}
+
+
+/* ==========================================================
+   ВСТУПЛЕНИЕ
+========================================================== */
+
+.documents-intro {
+    max-width: 980px;
+
+    margin: 0 auto 35px;
+
+    padding: 38px 42px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(246, 235, 209, 0.97),
+            rgba(224, 201, 159, 0.97)
+        );
+
+    border: 1px solid #a98a5f;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 14px rgba(55, 36, 18, 0.22);
+}
+
+
+.documents-intro h1 {
+    margin: 0;
+
+    color: #382614;
+
+    font-size:
+        clamp(
+            34px,
+            4vw,
+            48px
+        );
+}
+
+
+.documents-lead {
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+
+/* ==========================================================
+   НАВИГАЦИЯ ПО ДОКУМЕНТАМ
+========================================================== */
+
+.documents-navigation {
+    max-width: 1100px;
+
+    margin: 0 auto 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+.documents-navigation a {
+    padding: 9px 14px;
+
+    color: #49351f;
+
+    font-size: 14px;
+
+    background:
+        rgba(232, 214, 179, 0.9);
+
+    border:
+        1px solid rgba(116, 85, 47, 0.38);
+
+    border-radius: 18px;
+
+    transition:
+        background 0.2s,
+        transform 0.2s;
+}
+
+
+.documents-navigation a:hover {
+    background: #e2c995;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================================
+   РАЗДЕЛ
+========================================================== */
+
+.documents-category {
+    margin-bottom: 45px;
+}
+
+
+.documents-category-heading {
+    max-width: 850px;
+
+    margin: 0 auto 24px;
+
+    text-align: center;
+}
+
+
+.documents-category-heading h2,
+.documents-note h2 {
+    margin: 0 0 10px;
+
+    color: #3b2917;
+
+    font-size: 30px;
+}
+
+
+.documents-category-heading p {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   СЕТКА ДОКУМЕНТОВ
+========================================================== */
+
+.documents-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* ==========================================================
+   КАРТОЧКА ДОКУМЕНТА
+========================================================== */
+
+.document-card {
+    display: grid;
+
+    grid-template-columns:
+        90px 1fr;
+
+    overflow: hidden;
+
+    min-height: 210px;
+
+    background:
+        linear-gradient(
+            rgba(244, 231, 202, 0.97),
+            rgba(222, 197, 154, 0.97)
+        );
+
+    border: 1px solid #a0845f;
+    border-radius: 7px;
+
+    box-shadow:
+        0 4px 11px rgba(53, 34, 17, 0.18);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+
+.document-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 17px rgba(53, 34, 17, 0.26);
+}
+
+
+/* ==========================================================
+   ЗНАЧОК ДОКУМЕНТА
+========================================================== */
+
+.document-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+
+    color: #ead8b5;
+
+    font-size: 23px;
+    font-weight: 700;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            #50371e,
+            #302014
+        );
+
+    border-right:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* ==========================================================
+   ТЕКСТ
+========================================================== */
+
+.document-content {
+    padding: 24px 25px;
+}
+
+
+.document-period {
+    margin: 0 0 5px;
+
+    color: #80613c;
+
+    font-size: 12px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+
+.document-content h3 {
+    margin: 0 0 12px;
+
+    color: #372513;
+
+    font-size: 22px;
+    line-height: 1.25;
+}
+
+
+.document-content p {
+    margin: 0 0 12px;
+
+    font-size: 15px;
+    line-height: 1.58;
+}
+
+
+.document-status {
+    display: inline-block;
+
+    margin-top: 6px;
+    padding: 6px 10px;
+
+    color: #5c4a31;
+
+    font-size: 13px;
+
+    background:
+        rgba(255, 248, 226, 0.55);
+
+    border:
+        1px solid rgba(116, 84, 45, 0.35);
+
+    border-radius: 4px;
+}
+
+
+.document-link {
+    color: #526020;
+
+    font-size: 14px;
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================================
+   ПРИМЕЧАНИЕ ОБ АРХИВЕ
+========================================================== */
+
+.documents-note {
+    max-width: 980px;
+
+    margin: 45px auto;
+
+    padding: 34px 36px;
+
+    background:
+        rgba(235, 218, 183, 0.87);
+
+    border: 1px solid #a88b63;
+    border-radius: 8px;
+
+    box-shadow:
+        0 3px 10px rgba(52, 34, 17, 0.16);
+}
+
+
+.documents-note h2 {
+    text-align: center;
+}
+
+
+.documents-note p {
+    line-height: 1.65;
+}
+
+
+/* ==========================================================
+   ПЛАНШЕТ
+========================================================== */
+
+@media (max-width: 900px) {
+
+    .documents-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==========================================================
+   ТЕЛЕФОН
+========================================================== */
+
+@media (max-width: 650px) {
+
+    .documents-intro {
+        padding: 28px 21px;
+    }
+
+
+    .documents-intro h1 {
+        font-size: 31px;
+    }
+
+
+    .documents-lead {
+        font-size: 17px;
+    }
+
+
+    .documents-navigation {
+        justify-content: flex-start;
+    }
+
+
+    .documents-category-heading h2,
+    .documents-note h2 {
+        font-size: 25px;
+    }
+
+
+    .document-card {
+        display: block;
+
+        min-height: 0;
+    }
+
+
+    .document-icon {
+        min-height: 72px;
+
+        border-right: none;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.08);
+    }
+
+
+    .document-content {
+        padding: 22px 20px;
+    }
+
+
+    .documents-note {
+        padding: 27px 21px;
+    }
+
+}
+/* ==========================================================
+   СТРАНИЦА "МЕСТА"
+========================================================== */
+
+.places-page {
+    max-width: 1250px;
+}
+
+
+/* ==========================================================
+   ВСТУПЛЕНИЕ
+========================================================== */
+
+.places-intro {
+    max-width: 980px;
+
+    margin: 0 auto 35px;
+    padding: 38px 42px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(246, 235, 209, 0.97),
+            rgba(224, 201, 159, 0.97)
+        );
+
+    border: 1px solid #a98a5f;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 14px
+        rgba(55, 36, 18, 0.22);
+}
+
+
+.places-intro h1 {
+    margin: 0;
+
+    color: #382614;
+
+    font-size:
+        clamp(
+            34px,
+            4vw,
+            48px
+        );
+}
+
+
+.places-lead {
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+
+/* ==========================================================
+   НАВИГАЦИЯ
+========================================================== */
+
+.places-navigation {
+    max-width: 1100px;
+
+    margin: 0 auto 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+.places-navigation a {
+    padding: 9px 14px;
+
+    color: #49351f;
+
+    font-size: 14px;
+
+    background:
+        rgba(232, 214, 179, 0.9);
+
+    border:
+        1px solid
+        rgba(116, 85, 47, 0.38);
+
+    border-radius: 18px;
+
+    transition:
+        background 0.2s,
+        transform 0.2s;
+}
+
+
+.places-navigation a:hover {
+    background: #e2c995;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* ==========================================================
+   РАЗДЕЛ
+========================================================== */
+
+.place-section {
+    margin-bottom: 48px;
+}
+
+
+.place-heading {
+    max-width: 850px;
+
+    margin: 0 auto 24px;
+
+    text-align: center;
+}
+
+
+.place-heading h2,
+.places-map-note h2 {
+    margin: 0 0 10px;
+
+    color: #3b2917;
+
+    font-size: 30px;
+}
+
+
+.place-heading p {
+    max-width: 720px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   БОЛЬШАЯ КАРТОЧКА МЕСТА
+========================================================== */
+
+.place-card {
+    display: grid;
+
+    grid-template-columns:
+        minmax(300px, 0.9fr)
+        minmax(0, 1.1fr);
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(244, 231, 202, 0.97),
+            rgba(222, 197, 154, 0.97)
+        );
+
+    border: 1px solid #a0845f;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 12px
+        rgba(53, 34, 17, 0.2);
+}
+
+
+.place-featured {
+    border-color: #80633c;
+}
+
+
+.place-image {
+    min-height: 390px;
+
+    background: #c9b188;
+}
+
+
+.place-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter:
+        sepia(25%)
+        saturate(82%);
+}
+
+
+.place-placeholder {
+    min-height: 330px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #d7c4a2;
+
+    font-size: 18px;
+
+    background:
+        linear-gradient(
+            #55412d,
+            #302318
+        );
+}
+
+
+.place-content {
+    padding: 32px 34px;
+}
+
+
+.place-period {
+    margin: 0 0 5px;
+
+    color: #80613c;
+
+    font-size: 13px;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+
+.place-content h3 {
+    margin: 0 0 15px;
+
+    color: #372513;
+
+    font-size: 27px;
+}
+
+
+.place-content p {
+    margin: 0 0 14px;
+
+    font-size: 15px;
+    line-height: 1.62;
+}
+
+
+.place-coordinates {
+    margin: 20px 0;
+
+    padding: 11px 14px;
+
+    background:
+        rgba(255, 248, 226, 0.55);
+
+    border-left:
+        4px solid #80613b;
+
+    font-size: 14px;
+}
+
+
+.place-link {
+    color: #526020;
+
+    font-size: 14px;
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================================
+   МАЛЫЕ КАРТОЧКИ
+========================================================== */
+
+.places-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+.small-place-card {
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(244, 231, 202, 0.97),
+            rgba(222, 197, 154, 0.97)
+        );
+
+    border: 1px solid #a0845f;
+    border-radius: 7px;
+
+    box-shadow:
+        0 4px 11px
+        rgba(53, 34, 17, 0.17);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+
+.small-place-card:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 16px
+        rgba(53, 34, 17, 0.25);
+}
+
+
+.small-place-placeholder {
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #d8c6a5;
+
+    font-size: 20px;
+
+    background:
+        linear-gradient(
+            #503b27,
+            #302216
+        );
+}
+
+
+.small-place-content {
+    padding: 22px 23px;
+}
+
+
+.small-place-content h3 {
+    margin: 0 0 10px;
+
+    color: #382614;
+
+    font-size: 21px;
+}
+
+
+.small-place-content p {
+    margin: 0 0 10px;
+
+    font-size: 14px;
+    line-height: 1.58;
+}
+
+
+/* ==========================================================
+   БУДУЩАЯ КАРТА
+========================================================== */
+
+.places-map-note {
+    max-width: 980px;
+
+    margin: 45px auto;
+
+    padding: 35px 38px;
+
+    text-align: center;
+
+    background:
+        rgba(235, 218, 183, 0.87);
+
+    border: 1px solid #a88b63;
+    border-radius: 8px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(52, 34, 17, 0.16);
+}
+
+
+.places-map-note p {
+    max-width: 760px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    line-height: 1.65;
+}
+
+
+/* ==========================================================
+   ПЛАНШЕТ
+========================================================== */
+
+@media (max-width: 900px) {
+
+    .place-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .place-image {
+        height: 380px;
+        min-height: 0;
+    }
+
+}
+
+
+/* ==========================================================
+   ТЕЛЕФОН
+========================================================== */
+
+@media (max-width: 650px) {
+
+    .places-intro {
+        padding: 28px 21px;
+    }
+
+
+    .places-intro h1 {
+        font-size: 31px;
+    }
+
+
+    .places-lead {
+        font-size: 17px;
+    }
+
+
+    .places-navigation {
+        justify-content: flex-start;
+    }
+
+
+    .place-heading h2,
+    .places-map-note h2 {
+        font-size: 25px;
+    }
+
+
+    .place-image {
+        height: 260px;
+    }
+
+
+    .place-content {
+        padding: 23px 20px;
+    }
+
+
+    .place-content h3 {
+        font-size: 24px;
+    }
+
+
+    .places-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .small-place-placeholder {
+        height: 135px;
+    }
+
+
+    .places-map-note {
+        padding: 27px 21px;
+    }
+
+}/* ==========================================================
+   СТРАНИЦА "ОБЪЯВЛЕНИЯ"
+========================================================== */
+
+.ads-page {
+    max-width: 1250px;
+}
+
+
+/* ==========================================================
+   ВСТУПЛЕНИЕ
+========================================================== */
+
+.ads-intro {
+    max-width: 980px;
+
+    margin: 0 auto 35px;
+    padding: 38px 42px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(246, 235, 209, 0.97),
+            rgba(224, 201, 159, 0.97)
+        );
+
+    border: 1px solid #a98a5f;
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 14px
+        rgba(55, 36, 18, 0.22);
+}
+
+
+.ads-intro h1 {
+    margin: 0;
+
+    color: #382614;
+
+    font-size:
+        clamp(
+            34px,
+            4vw,
+            48px
+        );
+}
+
+
+.ads-lead {
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+
+/* ==========================================================
+   НАВИГАЦИЯ
+========================================================== */
+
+.ads-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin: 0 auto 40px;
+}
+
+
+.ads-navigation a {
+    padding: 9px 15px;
+
+    color: #49351f;
+
+    font-size: 14px;
+
+    background:
+        rgba(232, 214, 179, 0.9);
+
+    border:
+        1px solid
+        rgba(116, 85, 47, 0.38);
+
+    border-radius: 18px;
+}
+
+
+.ads-navigation a:hover {
+    background: #e2c995;
+}
+
+
+/* ==========================================================
+   РАЗДЕЛ
+========================================================== */
+
+.ads-section {
+    margin-bottom: 48px;
+}
+
+
+.ads-section-heading {
+    max-width: 850px;
+
+    margin: 0 auto 24px;
+
+    text-align: center;
+}
+
+
+.ads-section-heading h2,
+.ads-rules h2 {
+    margin: 0 0 10px;
+
+    color: #3b2917;
+
+    font-size: 30px;
+}
+
+
+.ads-section-heading p {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   СЕТКА ОБЪЯВЛЕНИЙ
+========================================================== */
+
+.ads-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* ==========================================================
+   КАРТОЧКА
+========================================================== */
+
+.ad-card {
+    display: grid;
+
+    grid-template-columns:
+        105px 1fr;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(244, 231, 202, 0.97),
+            rgba(222, 197, 154, 0.97)
+        );
+
+    border: 1px solid #a0845f;
+    border-radius: 7px;
+
+    box-shadow:
+        0 4px 11px
+        rgba(53, 34, 17, 0.18);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+
+.ad-card:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 17px
+        rgba(53, 34, 17, 0.26);
+}
+
+
+.ad-important {
+    border-color: #7b643e;
+}
+
+
+/* ==========================================================
+   ДАТА
+========================================================== */
+
+.ad-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+
+    color: #ead9b7;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            #50371e,
+            #302014
+        );
+}
+
+
+/* ==========================================================
+   ТЕКСТ
+========================================================== */
+
+.ad-content {
+    padding: 23px 24px;
+}
+
+
+.ad-content h3 {
+    margin: 8px 0 10px;
+
+    color: #382614;
+
+    font-size: 21px;
+}
+
+
+.ad-content p {
+    margin: 0 0 11px;
+
+    font-size: 14px;
+    line-height: 1.58;
+}
+
+
+.ad-content a {
+    color: #526020;
+
+    font-size: 14px;
+
+    text-decoration: underline;
+}
+
+
+.ad-tag {
+    display: inline-block;
+
+    padding: 4px 8px;
+
+    color: #5b492e;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    background:
+        rgba(255, 248, 226, 0.55);
+
+    border:
+        1px solid
+        rgba(116, 84, 45, 0.3);
+
+    border-radius: 3px;
+}
+
+
+/* ==========================================================
+   АРХИВ
+========================================================== */
+
+.ads-archive {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+.ads-archive-empty {
+    padding: 38px;
+
+    color: #655039;
+
+    text-align: center;
+
+    background:
+        rgba(236, 219, 184, 0.82);
+
+    border:
+        1px dashed #9a7b52;
+
+    border-radius: 7px;
+}
+
+
+/* ==========================================================
+   ПРАВИЛА
+========================================================== */
+
+.ads-rules {
+    max-width: 980px;
+
+    margin: 45px auto;
+
+    padding: 34px 36px;
+
+    text-align: center;
+
+    background:
+        rgba(235, 218, 183, 0.87);
+
+    border: 1px solid #a88b63;
+    border-radius: 8px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(52, 34, 17, 0.16);
+}
+
+
+.ads-rules-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+.ads-rule {
+    padding: 18px 20px;
+
+    text-align: left;
+
+    background:
+        rgba(255, 248, 226, 0.52);
+
+    border:
+        1px solid
+        rgba(116, 84, 45, 0.3);
+
+    border-radius: 5px;
+}
+
+
+.ads-rule strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #49331d;
+
+    font-size: 17px;
+}
+
+
+.ads-rule p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+
+.ads-warning {
+    margin-top: 22px;
+    padding: 14px 18px;
+
+    color: #604a30;
+
+    background:
+        rgba(255, 248, 226, 0.45);
+
+    border-left:
+        4px solid #80613b;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================================
+   ПЛАНШЕТ
+========================================================== */
+
+@media (max-width: 900px) {
+
+    .ads-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==========================================================
+   ТЕЛЕФОН
+========================================================== */
+
+@media (max-width: 650px) {
+
+    .ads-intro {
+        padding: 28px 21px;
+    }
+
+
+    .ads-intro h1 {
+        font-size: 31px;
+    }
+
+
+    .ads-lead {
+        font-size: 17px;
+    }
+
+
+    .ads-navigation {
+        justify-content: flex-start;
+    }
+
+
+    .ads-section-heading h2,
+    .ads-rules h2 {
+        font-size: 25px;
+    }
+
+
+    .ad-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ad-date {
+        justify-content: flex-start;
+
+        padding: 10px 16px;
+    }
+
+
+    .ads-rules {
+        padding: 27px 21px;
+    }
+
+
+    .ads-rules-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

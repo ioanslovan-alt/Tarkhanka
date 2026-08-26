@@ -3,199 +3,791 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Места — Тарханка</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Исторические и памятные места села Тарханка"
+    >
+
+    <title>Места Тарханки</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- Шапка сайта -->
 
-    <header>
-        <h1>Места Тарханки</h1>
-        <p>Места, которые знают и любят жители села</p>
-    </header>
+<!-- ==========================================================
+     ВЕРХНЯЯ ЧАСТЬ САЙТА
+========================================================== -->
+
+<header class="site-header">
+
+    <div
+        class="forest-background"
+        role="img"
+        aria-label="Тарханка"
+    >
+        <div class="wood-sign"></div>
+    </div>
 
 
-    <!-- Главное меню -->
+    <nav class="main-nav">
 
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="history.html">История</a>
-        <a href="people.html">Наши люди</a>
-        <a href="places.html">Места</a>
-        <a href="news.html">Новости</a>
-        <a href="ads.html">Объявления</a>
-        <a href="photos.html">Фотоархив</a>
+        <div class="nav-container">
+
+            <a href="index.html" class="nav-link">
+                Главная
+            </a>
+
+            <a href="history.html" class="nav-link">
+                История
+            </a>
+
+            <a href="people.html" class="nav-link">
+                Люди
+            </a>
+
+            <a href="families.html" class="nav-link">
+                Роды
+            </a>
+
+            <a href="photos.html" class="nav-link">
+                Фотоархив
+            </a>
+
+            <a href="documents.html" class="nav-link">
+                Документы
+            </a>
+
+            <a href="places.html" class="nav-link active">
+                Места
+            </a>
+
+            <a href="news.html" class="nav-link">
+                Новости
+            </a>
+
+            <a href="ads.html" class="nav-link">
+                Объявления
+            </a>
+
+        </div>
+
     </nav>
 
-
-    <!-- Основное содержимое -->
-
-    <main>
-
-        <!-- Введение -->
-
-        <section class="welcome">
-
-            <h2>Знакомые места родного села</h2>
-
-            <p>
-                У каждого села есть места, которые особенно
-                дороги его жителям.
-            </p>
-
-            <p>
-                Это могут быть улицы, здания, памятники,
-                природные места, места отдыха и просто
-                уголки, с которыми связаны воспоминания.
-            </p>
-
-        </section>
+</header>
 
 
-        <!-- Природа -->
 
-        <section>
+<!-- ==========================================================
+     ОСНОВНОЕ СОДЕРЖИМОЕ
+========================================================== -->
 
-            <h2>🌲 Природа</h2>
-
-            <article>
-
-                <h3>Природа вокруг Тарханки</h3>
-
-                <p>
-                    Здесь мы расскажем о природных местах
-                    рядом с селом: реках, лесах, горах,
-                    озёрах и других интересных местах.
-                </p>
-
-            </article>
-
-        </section>
+<main class="page-container places-page">
 
 
-        <!-- Важные места -->
+    <!-- ======================================================
+         ВСТУПЛЕНИЕ
+    ======================================================= -->
 
-        <section>
+    <section class="places-intro">
 
-            <h2>🏡 Важные места села</h2>
-
-            <article>
-
-                <h3>Места, связанные с жизнью Тарханки</h3>
-
-                <p>
-                    Здесь появятся фотографии и описания
-                    зданий, улиц и других мест, которые
-                    имеют значение для жителей села.
-                </p>
-
-            </article>
-
-        </section>
-
-
-        <!-- Памятные места -->
-
-        <section>
-
-            <h2>🕯 Памятные места</h2>
-
-            <article>
-
-                <h3>Память поколений</h3>
-
-                <p>
-                    В этом разделе будут собраны памятники,
-                    мемориалы и другие места, связанные
-                    с историей жителей Тарханки.
-                </p>
-
-            </article>
-
-        </section>
-
-
-        <!-- Карта -->
-
-        <section>
-
-            <h2>🗺 Тарханка на карте</h2>
-
-            <article>
-
-                <p>
-                    В будущем здесь появится интерактивная
-                    карта Тарханки с отмеченными интересными
-                    и важными местами.
-                </p>
-
-            </article>
-
-        </section>
-
-
-        <!-- Предложить место -->
-
-        <section class="participate">
-
-            <h2>📍 Знаете интересное место?</h2>
-
-            <p>
-                Расскажите о нём, и мы добавим его
-                на портал Тарханки.
-            </p>
-
-            <button>Предложить место</button>
-
-        </section>
-
-
-        <!-- Возврат -->
-
-        <section class="welcome">
-
-            <a href="index.html">← Вернуться на главную</a>
-
-        </section>
-
-    </main>
-
-
-    <!-- Подвал -->
-
-    <footer>
-
-        <p>Портал села Тарханка</p>
-
-        <p>
-            История • Люди • События • Жизнь села
+        <p class="section-label">
+            МЕСТА ТАРХАНКИ
         </p>
 
-    </footer>
+        <h1>
+            Историческая карта села
+        </h1>
 
-    <script>
-    const backToTopButton = document.getElementById("backToTop");
+        <div class="decor-line"></div>
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
-            backToTopButton.classList.add("show");
-        } else {
-            backToTopButton.classList.remove("show");
-        }
-    });
+        <p class="places-lead">
+            История живёт не только в документах,
+            но и в конкретных местах.
+        </p>
 
-    backToTopButton.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-</script>
+        <p>
+            Здесь будут собираться сведения
+            о старых улицах, домах, храмах,
+            общественных зданиях,
+            хозяйственных объектах,
+            природных местах
+            и территориях, связанных
+            с памятью жителей Тарханки.
+        </p>
+
+        <p>
+            Для каждого объекта по возможности
+            будут добавляться старые фотографии,
+            современные снимки,
+            координаты, карты
+            и воспоминания жителей.
+        </p>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         НАВИГАЦИЯ
+    ======================================================= -->
+
+    <section class="places-navigation">
+
+        <a href="#church">
+            Успенская церковь
+        </a>
+
+        <a href="#old-center">
+            Старый центр
+        </a>
+
+        <a href="#streets">
+            Улицы и дома
+        </a>
+
+        <a href="#public">
+            Общественные места
+        </a>
+
+        <a href="#economy">
+            Хозяйственные объекты
+        </a>
+
+        <a href="#nature">
+            Природа и окрестности
+        </a>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         УСПЕНСКАЯ ЦЕРКОВЬ
+    ======================================================= -->
+
+    <section
+        class="place-section"
+        id="church"
+    >
+
+        <div class="place-heading">
+
+            <p class="section-label">
+                ИСТОРИЧЕСКОЕ МЕСТО
+            </p>
+
+            <h2>
+                Успенская церковь
+            </h2>
+
+        </div>
+
+
+        <article class="place-card place-featured">
+
+            <div class="place-image">
+
+                <img
+                    src="images/history/uspenskaya-church.jpg"
+                    alt="Успенская церковь в Тарханке"
+                >
+
+            </div>
+
+
+            <div class="place-content">
+
+                <p class="place-period">
+                    С 1870 года
+                </p>
+
+                <h3>
+                    Успенская церковь Тарханки
+                </h3>
+
+                <p>
+                    Один из главных исторических
+                    объектов дореволюционной Тарханки.
+                </p>
+
+                <p>
+                    Здесь совершались крещения,
+                    венчания и отпевания жителей,
+                    а метрические книги прихода
+                    сегодня могут помочь
+                    восстанавливать родословные
+                    старых тарханских семей.
+                </p>
+
+                <p>
+                    После исчезновения храма
+                    территория продолжала использоваться
+                    жителями села.
+                </p>
+
+                <div class="place-coordinates">
+                    Координаты места:
+                    <strong>50.113419, 82.954352</strong>
+                </div>
+
+                <a
+                    href="history.html#church"
+                    class="place-link"
+                >
+                    Подробнее об истории →
+                </a>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         СТАРЫЙ ЦЕНТР
+    ======================================================= -->
+
+    <section
+        class="place-section"
+        id="old-center"
+    >
+
+        <div class="place-heading">
+
+            <p class="section-label">
+                ПАМЯТЬ МЕСТА
+            </p>
+
+            <h2>
+                Территория бывшей церкви
+            </h2>
+
+        </div>
+
+
+        <article class="place-card">
+
+            <div class="place-placeholder">
+                Фото разыскивается
+            </div>
+
+
+            <div class="place-content">
+
+                <p class="place-period">
+                    XX век
+                </p>
+
+                <h3>
+                    Танцевальная площадка
+                </h3>
+
+                <p>
+                    После разрушения Успенской церкви
+                    на её территории в советское время
+                    была устроена танцевальная площадка.
+                </p>
+
+                <p>
+                    Старый фундамент полностью
+                    не исчез и ещё долго сохранялся
+                    под землёй.
+                </p>
+
+                <p>
+                    Позднее эта территория
+                    превратилась в заросший парк.
+                </p>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         УЛИЦЫ И ДОМА
+    ======================================================= -->
+
+    <section
+        class="place-section"
+        id="streets"
+    >
+
+        <div class="place-heading">
+
+            <p class="section-label">
+                ОБЛИК СЕЛА
+            </p>
+
+            <h2>
+                Старые улицы и дома
+            </h2>
+
+            <p>
+                Внешний вид Тарханки
+                менялся вместе с эпохами.
+            </p>
+
+        </div>
+
+
+        <div class="places-grid">
+
+            <article class="small-place-card">
+
+                <div class="small-place-placeholder">
+                    Фото
+                </div>
+
+                <div class="small-place-content">
+
+                    <h3>
+                        Старые жилые дома
+                    </h3>
+
+                    <p>
+                        Деревянные дома,
+                        усадьбы и хозяйственные постройки,
+                        сохранившиеся или известные
+                        по старым фотографиям.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="small-place-card">
+
+                <div class="small-place-placeholder">
+                    Фото
+                </div>
+
+                <div class="small-place-content">
+
+                    <h3>
+                        Улицы Тарханки
+                    </h3>
+
+                    <p>
+                        История названий улиц,
+                        старые дороги
+                        и изменение планировки села.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         ОБЩЕСТВЕННЫЕ МЕСТА
+    ======================================================= -->
+
+    <section
+        class="place-section"
+        id="public"
+    >
+
+        <div class="place-heading">
+
+            <p class="section-label">
+                ОБЩЕСТВЕННАЯ ЖИЗНЬ
+            </p>
+
+            <h2>
+                Школа и общественные здания
+            </h2>
+
+        </div>
+
+
+        <div class="places-grid">
+
+            <article class="small-place-card">
+
+                <div class="small-place-placeholder">
+                    Школа
+                </div>
+
+                <div class="small-place-content">
+
+                    <h3>
+                        Школа
+                    </h3>
+
+                    <p>
+                        Здесь будут собираться
+                        сведения об истории школы,
+                        учителях, учениках,
+                        старых зданиях
+                        и школьных фотографиях.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="small-place-card">
+
+                <div class="small-place-placeholder">
+                    Клуб
+                </div>
+
+                <div class="small-place-content">
+
+                    <h3>
+                        Клуб и общественные пространства
+                    </h3>
+
+                    <p>
+                        Места праздников,
+                        собраний, концертов
+                        и повседневной общественной
+                        жизни жителей села.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         ХОЗЯЙСТВЕННЫЕ ОБЪЕКТЫ
+    ======================================================= -->
+
+    <section
+        class="place-section"
+        id="economy"
+    >
+
+        <div class="place-heading">
+
+            <p class="section-label">
+                ТРУДОВАЯ ИСТОРИЯ
+            </p>
+
+            <h2>
+                Хозяйственные объекты
+            </h2>
+
+        </div>
+
+
+        <div class="places-grid">
+
+            <article class="small-place-card">
+
+                <div class="small-place-placeholder">
+                    XIX век
+                </div>
+
+                <div class="small-place-content">
+
+                    <h3>
+                        Мельницы
+                    </h3>
+
+                    <p>
+                        В дореволюционных источниках
+                        в Тарханке упоминаются
+                        несколько мельниц.
+                        Их расположение ещё предстоит
+                        установить.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="small-place-card">
+
+                <div class="small-place-placeholder">
+                    XX век
+                </div>
+
+                <div class="small-place-content">
+
+                    <h3>
+                        Колхозные и совхозные объекты
+                    </h3>
+
+                    <p>
+                        Фермы, мастерские,
+                        машинные дворы,
+                        склады и другие объекты,
+                        связанные с сельским хозяйством.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         ПРИРОДА
+    ======================================================= -->
+
+    <section
+        class="place-section"
+        id="nature"
+    >
+
+        <div class="place-heading">
+
+            <p class="section-label">
+                ОКРЕСТНОСТИ
+            </p>
+
+            <h2>
+                Природа вокруг Тарханки
+            </h2>
+
+        </div>
+
+
+        <div class="places-grid">
+
+            <article class="small-place-card">
+
+                <div class="small-place-placeholder">
+                    Река
+                </div>
+
+                <div class="small-place-content">
+
+                    <h3>
+                        Долина Ульбы
+                    </h3>
+
+                    <p>
+                        Тарханка расположена
+                        в долине Ульбы
+                        в предгорьях Западного Алтая.
+                    </p>
+
+                    <p>
+                        Река, поля, леса
+                        и сопки определяли
+                        образ жизни жителей
+                        и хозяйственное развитие села.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="small-place-card">
+
+                <div class="small-place-placeholder">
+                    Лес
+                </div>
+
+                <div class="small-place-content">
+
+                    <h3>
+                        Леса и сопки
+                    </h3>
+
+                    <p>
+                        Природные места вокруг Тарханки
+                        также являются частью
+                        истории и памяти жителей.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         БУДУЩАЯ КАРТА
+    ======================================================= -->
+
+    <section class="places-map-note">
+
+        <p class="section-label">
+            В ПЛАНАХ
+        </p>
+
+        <h2>
+            Интерактивная карта Тарханки
+        </h2>
+
+        <p>
+            В дальнейшем на портале
+            может появиться интерактивная карта,
+            на которой будут отмечены
+            исторические объекты,
+            старые дома,
+            места утраченных зданий
+            и современные фотографии.
+        </p>
+
+        <p>
+            Нажав на точку на карте,
+            посетитель сможет открыть
+            её историю, фотографии
+            и связанные документы.
+        </p>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         ПОМОЩЬ
+    ======================================================= -->
+
+    <section class="participate">
+
+        <h2>
+            Знаете старое место в Тарханке?
+        </h2>
+
+        <p>
+            Если вы знаете расположение
+            старого дома, хозяйственного объекта,
+            общественного здания
+            или другого памятного места,
+            расскажите нам о нём.
+        </p>
+
+        <a
+            href="contacts.html"
+            class="history-button"
+        >
+            Рассказать о месте →
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==========================================================
+     FOOTER
+========================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <div class="footer-tree">
+                ♣
+            </div>
+
+            <div>
+
+                <h2>
+                    Тарханка
+                </h2>
+
+                <p>
+                    история села и его людей
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-contribute">
+
+            <p>
+                Если у вас есть фотографии,
+                документы или истории,
+                связанные с Тарханкой,
+                свяжитесь с нами.
+            </p>
+
+            <a
+                href="contacts.html"
+                class="footer-button"
+            >
+                Связаться с нами
+            </a>
+
+        </div>
+
+
+        <div class="footer-contacts">
+
+            <p>
+                ✉
+                <a href="contacts.html">
+                    Контакты портала
+                </a>
+            </p>
+
+            <p>
+                ⌖ Восточно-Казахстанская область,<br>
+                село Тарханка
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © Тарханка —
+            история села и его людей, 2026
+        </span>
+
+        <span>
+            Сохраняем прошлое —
+            создаём будущее
+        </span>
+
+    </div>
+
+</footer>
+
 
 </body>
+
 </html>

@@ -3,160 +3,631 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Новости — Тарханка</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Новости села Тарханка и обновления исторического портала"
+    >
+
+    <title>Новости Тарханки</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- Шапка сайта -->
 
-    <header>
-        <h1>Новости Тарханки</h1>
-        <p>Что происходит в нашем селе</p>
-    </header>
+<!-- ==========================================================
+     ВЕРХНЯЯ ЧАСТЬ САЙТА
+========================================================== -->
+
+<header class="site-header">
+
+    <div
+        class="forest-background"
+        role="img"
+        aria-label="Тарханка"
+    >
+        <div class="wood-sign"></div>
+    </div>
 
 
-    <!-- Главное меню -->
+    <nav class="main-nav">
 
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="history.html">История</a>
-        <a href="people.html">Наши люди</a>
-        <a href="places.html">Места</a>
-        <a href="news.html">Новости</a>
-        <a href="ads.html">Объявления</a>
-        <a href="photos.html">Фотоархив</a>
+        <div class="nav-container">
+
+            <a href="index.html" class="nav-link">
+                Главная
+            </a>
+
+            <a href="history.html" class="nav-link">
+                История
+            </a>
+
+            <a href="people.html" class="nav-link">
+                Люди
+            </a>
+
+            <a href="families.html" class="nav-link">
+                Роды
+            </a>
+
+            <a href="photos.html" class="nav-link">
+                Фотоархив
+            </a>
+
+            <a href="documents.html" class="nav-link">
+                Документы
+            </a>
+
+            <a href="places.html" class="nav-link">
+                Места
+            </a>
+
+            <a href="news.html" class="nav-link active">
+                Новости
+            </a>
+
+            <a href="ads.html" class="nav-link">
+                Объявления
+            </a>
+
+        </div>
+
     </nav>
 
-
-    <!-- Основное содержимое -->
-
-    <main>
-
-        <!-- Введение -->
-
-        <section class="welcome">
-
-            <h2>Новости Тарханки</h2>
-
-            <p>
-                Здесь будут собираться новости и важные события
-                нашего села.
-            </p>
-
-            <p>
-                Со временем этот раздел станет настоящей
-                лентой жизни Тарханки.
-            </p>
-
-        </section>
+</header>
 
 
-        <!-- Новость -->
 
-        <section>
+<!-- ==========================================================
+     ОСНОВНОЕ СОДЕРЖИМОЕ
+========================================================== -->
 
-            <p><strong>20 августа 2026 года</strong></p>
-
-            <article>
-
-                <h3>Новости Тарханки скоро появятся здесь</h3>
-
-                <p>
-                    Пока это первая запись в нашей новой
-                    ленте новостей.
-                </p>
-
-                <p>
-                    В дальнейшем здесь будут публиковаться
-                    реальные новости, события и важная
-                    информация для жителей села.
-                </p>
-
-            </article>
-
-        </section>
+<main class="page-container news-page">
 
 
-        <!-- Будущая новость -->
+    <!-- ======================================================
+         ВСТУПЛЕНИЕ
+    ======================================================= -->
 
-        <section>
+    <section class="news-intro">
 
-            <article>
-
-                <h3>Следите за новостями</h3>
-
-                <p>
-                    Раздел будет постепенно наполняться.
-                    Мы хотим сохранить здесь не только
-                    официальные события, но и обычную жизнь
-                    Тарханки.
-                </p>
-
-            </article>
-
-        </section>
-
-
-        <!-- Предложить новость -->
-
-        <section class="participate">
-
-            <h2>📰 Есть новость?</h2>
-
-            <p>
-                Жители смогут предлагать новости и события
-                для публикации на портале.
-            </p>
-
-            <button>Предложить новость</button>
-
-        </section>
-
-
-        <!-- Возврат -->
-
-        <section class="welcome">
-
-            <a href="index.html">← Вернуться на главную</a>
-
-        </section>
-
-    </main>
-
-
-    <!-- Подвал -->
-
-    <footer>
-
-        <p>Портал села Тарханка</p>
-
-        <p>
-            История • Люди • События • Жизнь села
+        <p class="section-label">
+            НОВОСТИ ТАРХАНКИ
         </p>
 
-    </footer>
-<script>
-    const backToTopButton = document.getElementById("backToTop");
+        <h1>
+            Село сегодня и новости портала
+        </h1>
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
-            backToTopButton.classList.add("show");
-        } else {
-            backToTopButton.classList.remove("show");
-        }
-    });
+        <div class="decor-line"></div>
 
-    backToTopButton.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-</script>
+        <p class="news-lead">
+            Здесь будут появляться современные новости
+            Тарханки, объявления о событиях,
+            а также сообщения о новых материалах,
+            найденных документах и обновлениях портала.
+        </p>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         ПЕРЕКЛЮЧАТЕЛИ
+    ======================================================= -->
+
+    <section class="news-navigation">
+
+        <a href="#village-news">
+            Новости села
+        </a>
+
+        <a href="#portal-news">
+            Обновления портала
+        </a>
+
+        <a href="#archive-news">
+            Новые находки
+        </a>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         НОВОСТИ СЕЛА
+    ======================================================= -->
+
+    <section
+        class="news-section"
+        id="village-news"
+    >
+
+        <div class="news-section-heading">
+
+            <p class="section-label">
+                СОВРЕМЕННАЯ ТАРХАНКА
+            </p>
+
+            <h2>
+                Новости села
+            </h2>
+
+            <p>
+                События современной жизни Тарханки.
+            </p>
+
+        </div>
+
+
+        <div class="news-grid">
+
+
+            <!-- Заглушка для будущей новости -->
+
+            <article class="news-card">
+
+                <div class="news-card-image news-placeholder">
+                    Новости Тарханки
+                </div>
+
+                <div class="news-card-content">
+
+                    <div class="news-meta">
+                        <time datetime="2026-08-26">
+                            26 августа 2026
+                        </time>
+
+                        <span class="news-tag">
+                            Село
+                        </span>
+                    </div>
+
+                    <h3>
+                        Здесь появятся новости современной Тарханки
+                    </h3>
+
+                    <p>
+                        Раздел будет пополняться сообщениями
+                        о событиях, общественной жизни,
+                        благоустройстве и других новостях села.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         ОБНОВЛЕНИЯ ПОРТАЛА
+    ======================================================= -->
+
+    <section
+        class="news-section"
+        id="portal-news"
+    >
+
+        <div class="news-section-heading">
+
+            <p class="section-label">
+                ПОРТАЛ ТАРХАНКИ
+            </p>
+
+            <h2>
+                Обновления сайта
+            </h2>
+
+            <p>
+                Что нового появилось
+                в нашем цифровом архиве.
+            </p>
+
+        </div>
+
+
+        <div class="portal-news-list">
+
+
+            <article class="portal-news-item">
+
+                <div class="portal-news-date">
+                    26.08.2026
+                </div>
+
+                <div class="portal-news-content">
+
+                    <span class="news-tag">
+                        Роды
+                    </span>
+
+                    <h3>
+                        Создан раздел «Роды Тарханки»
+                    </h3>
+
+                    <p>
+                        Начато формирование каталога
+                        старых тарханских фамилий
+                        и семейных родословных.
+                    </p>
+
+                    <a href="families.html">
+                        Перейти в раздел →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="portal-news-item">
+
+                <div class="portal-news-date">
+                    26.08.2026
+                </div>
+
+                <div class="portal-news-content">
+
+                    <span class="news-tag">
+                        Фотоархив
+                    </span>
+
+                    <h3>
+                        Создан фотоархив Тарханки
+                    </h3>
+
+                    <p>
+                        Фотографии будут распределяться
+                        по эпохам и темам:
+                        старая Тарханка,
+                        жители, советский период,
+                        улицы и современное село.
+                    </p>
+
+                    <a href="photos.html">
+                        Открыть фотоархив →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="portal-news-item">
+
+                <div class="portal-news-date">
+                    26.08.2026
+                </div>
+
+                <div class="portal-news-content">
+
+                    <span class="news-tag">
+                        Документы
+                    </span>
+
+                    <h3>
+                        Открыт раздел исторических документов
+                    </h3>
+
+                    <p>
+                        В нём будут собираться
+                        метрические книги,
+                        ревизские сказки,
+                        статистические материалы,
+                        карты и архивные дела.
+                    </p>
+
+                    <a href="documents.html">
+                        Смотреть документы →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="portal-news-item">
+
+                <div class="portal-news-date">
+                    26.08.2026
+                </div>
+
+                <div class="portal-news-content">
+
+                    <span class="news-tag">
+                        Люди
+                    </span>
+
+                    <h3>
+                        Обновлён раздел «Люди»
+                    </h3>
+
+                    <p>
+                        Начато создание отдельной
+                        биографической базы жителей
+                        и уроженцев Тарханки.
+                    </p>
+
+                    <a href="people.html">
+                        Перейти к людям →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         АРХИВНЫЕ НАХОДКИ
+    ======================================================= -->
+
+    <section
+        class="news-section"
+        id="archive-news"
+    >
+
+        <div class="news-section-heading">
+
+            <p class="section-label">
+                ИССЛЕДОВАНИЕ
+            </p>
+
+            <h2>
+                Новые исторические находки
+            </h2>
+
+            <p>
+                Сюда будем помещать
+                особенно интересные результаты поиска.
+            </p>
+
+        </div>
+
+
+        <div class="archive-news-grid">
+
+
+            <article class="archive-news-card">
+
+                <div class="archive-news-year">
+                    1834
+                </div>
+
+                <div>
+
+                    <span class="news-tag">
+                        Генеалогия
+                    </span>
+
+                    <h3>
+                        Кузнецовы в материалах ранней Тарханки
+                    </h3>
+
+                    <p>
+                        Найдены сведения о семье Кузнецовых,
+                        проживавшей в Тарханке
+                        в первой половине XIX века.
+                    </p>
+
+                    <a href="families.html">
+                        Подробнее →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="archive-news-card">
+
+                <div class="archive-news-year">
+                    1829
+                </div>
+
+                <div>
+
+                    <span class="news-tag">
+                        Люди
+                    </span>
+
+                    <h3>
+                        Фёдор Еремеев
+                    </h3>
+
+                    <p>
+                        В материалах по истории
+                        старообрядчества обнаружено
+                        упоминание Фёдора Еремеева,
+                        связанного с Тарханкой.
+                    </p>
+
+                    <a href="people.html">
+                        Подробнее →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="archive-news-card">
+
+                <div class="archive-news-year">
+                    1930-е
+                </div>
+
+                <div>
+
+                    <span class="news-tag">
+                        Репрессии
+                    </span>
+
+                    <h3>
+                        Продолжается поиск репрессированных
+                    </h3>
+
+                    <p>
+                        Собираются сведения
+                        о жителях и уроженцах Тарханки,
+                        подвергшихся раскулачиванию,
+                        высылке и политическим репрессиям.
+                    </p>
+
+                    <a href="history.html#repressions">
+                        Читать подробнее →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         ПРЕДЛОЖИТЬ НОВОСТЬ
+    ======================================================= -->
+
+    <section class="participate">
+
+        <h2>
+            Знаете новость о Тарханке?
+        </h2>
+
+        <p>
+            Если вы хотите рассказать
+            о событии в селе,
+            сообщить о найденной фотографии,
+            документе или историческом материале —
+            свяжитесь с нами.
+        </p>
+
+        <a
+            href="contacts.html"
+            class="history-button"
+        >
+            Сообщить новость →
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==========================================================
+     FOOTER
+========================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <div class="footer-tree">
+                ♣
+            </div>
+
+            <div>
+
+                <h2>
+                    Тарханка
+                </h2>
+
+                <p>
+                    история села и его людей
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-contribute">
+
+            <p>
+                Если у вас есть фотографии,
+                документы, новости или истории,
+                связанные с Тарханкой,
+                свяжитесь с нами.
+            </p>
+
+            <a
+                href="contacts.html"
+                class="footer-button"
+            >
+                Связаться с нами
+            </a>
+
+        </div>
+
+
+        <div class="footer-contacts">
+
+            <p>
+                ✉
+                <a href="contacts.html">
+                    Контакты портала
+                </a>
+            </p>
+
+            <p>
+                ⌖ Восточно-Казахстанская область,<br>
+                село Тарханка
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © Тарханка —
+            история села и его людей, 2026
+        </span>
+
+        <span>
+            Сохраняем прошлое —
+            создаём будущее
+        </span>
+
+    </div>
+
+</footer>
+
+
 </body>
+
 </html>

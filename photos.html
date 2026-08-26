@@ -3,193 +3,655 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Фотоархив — Тарханка</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Фотоархив села Тарханка — старые фотографии, жители, улицы, дома и памятные места"
+    >
+
+    <title>Фотоархив Тарханки</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- Шапка сайта -->
 
-    <header>
-        <h1>Фотоархив Тарханки</h1>
-        <p>Тарханка в фотографиях</p>
-    </header>
+<!-- ==========================================================
+     ВЕРХНЯЯ ЧАСТЬ САЙТА
+========================================================== -->
+
+<header class="site-header">
+
+    <div
+        class="forest-background"
+        role="img"
+        aria-label="Тарханка"
+    >
+        <div class="wood-sign"></div>
+    </div>
 
 
-    <!-- Главное меню -->
+    <nav class="main-nav">
 
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="history.html">История</a>
-        <a href="people.html">Наши люди</a>
-        <a href="places.html">Места</a>
-        <a href="news.html">Новости</a>
-        <a href="ads.html">Объявления</a>
-        <a href="photos.html">Фотоархив</a>
+        <div class="nav-container">
+
+            <a href="index.html" class="nav-link">
+                Главная
+            </a>
+
+            <a href="history.html" class="nav-link">
+                История
+            </a>
+
+            <a href="people.html" class="nav-link">
+                Люди
+            </a>
+
+            <a href="families.html" class="nav-link">
+                Роды
+            </a>
+
+            <a href="photos.html" class="nav-link active">
+                Фотоархив
+            </a>
+
+            <a href="documents.html" class="nav-link">
+                Документы
+            </a>
+
+            <a href="places.html" class="nav-link">
+                Места
+            </a>
+
+            <a href="news.html" class="nav-link">
+                Новости
+            </a>
+
+            <a href="ads.html" class="nav-link">
+                Объявления
+            </a>
+
+        </div>
+
     </nav>
 
-
-    <!-- Основное содержимое -->
-
-    <main>
-
-        <!-- Введение -->
-
-        <section class="welcome">
-
-            <h2>Фотографии Тарханки</h2>
-
-            <p>
-                Фотографии помогают сохранить то,
-                что со временем может измениться.
-            </p>
-
-            <p>
-                Здесь мы будем собирать фотографии
-                Тарханки разных лет — старые снимки,
-                современные фотографии села и фотографии
-                жителей.
-            </p>
-
-        </section>
+</header>
 
 
-        <!-- Старые фотографии -->
 
-        <section>
+<!-- ==========================================================
+     ОСНОВНОЕ СОДЕРЖИМОЕ
+========================================================== -->
 
-            <h2>📜 Тарханка в прошлом</h2>
-
-            <article>
-
-                <h3>Старые фотографии</h3>
-
-                <p>
-                    Здесь появятся фотографии Тарханки
-                    прошлых лет.
-                </p>
-
-                <p>
-                    Особенно ценны снимки, на которых можно
-                    увидеть старые улицы, дома, здания,
-                    технику и жизнь жителей села.
-                </p>
-
-            </article>
-
-        </section>
+<main class="page-container photos-page">
 
 
-        <!-- Современные фотографии -->
+    <!-- ======================================================
+         ВСТУПЛЕНИЕ
+    ======================================================= -->
 
-        <section>
+    <section class="photos-intro">
 
-            <h2>🏡 Тарханка сегодня</h2>
-
-            <article>
-
-                <h3>Современное село</h3>
-
-                <p>
-                    Здесь будут фотографии современной
-                    Тарханки, её улиц, природы и мест,
-                    которые окружают наше село.
-                </p>
-
-            </article>
-
-        </section>
-
-
-        <!-- Жители -->
-
-        <section>
-
-            <h2>👨‍👩‍👧‍👦 Люди Тарханки</h2>
-
-            <article>
-
-                <h3>Фотографии жителей</h3>
-
-                <p>
-                    Семейные фотографии, фотографии
-                    односельчан, праздников и различных
-                    событий.
-                </p>
-
-                <p>
-                    Такой архив поможет сохранить память
-                    о людях и поколениях Тарханки.
-                </p>
-
-            </article>
-
-        </section>
-
-
-        <!-- Предложить фотографию -->
-
-        <section class="participate">
-
-            <h2>📷 Есть фотография Тарханки?</h2>
-
-            <p>
-                Если у вас есть старые или современные
-                фотографии, которыми вы хотите поделиться,
-                в будущем их можно будет добавить
-                в фотоархив.
-            </p>
-
-            <button>Предложить фотографию</button>
-
-        </section>
-
-
-        <!-- Возврат -->
-
-        <section class="welcome">
-
-            <a href="index.html">← Вернуться на главную</a>
-
-        </section>
-
-    </main>
-
-
-    <!-- Подвал -->
-
-    <footer>
-
-        <p>Портал села Тарханка</p>
-
-        <p>
-            История • Люди • События • Жизнь села
+        <p class="section-label">
+            ФОТОАРХИВ ТАРХАНКИ
         </p>
 
-    </footer>
+        <h1>
+            Село в фотографиях
+        </h1>
 
-    <script>
-    const backToTopButton = document.getElementById("backToTop");
+        <div class="decor-line"></div>
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
-            backToTopButton.classList.add("show");
-        } else {
-            backToTopButton.classList.remove("show");
-        }
-    });
+        <p class="photos-lead">
+            Фотографии сохраняют то,
+            что невозможно полностью восстановить
+            по документам и воспоминаниям.
+        </p>
 
-    backToTopButton.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-</script>
+        <p>
+            Здесь будут собираться старые и современные
+            снимки Тарханки, её жителей, улиц,
+            домов, хозяйств, памятных мест
+            и важных событий.
+        </p>
+
+        <p>
+            Если известны автор снимка,
+            примерная дата, изображённые люди
+            или место съёмки, эти сведения
+            будут указываться вместе с фотографией.
+        </p>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         НАВИГАЦИЯ ПО АРХИВУ
+    ======================================================= -->
+
+    <section class="photos-navigation">
+
+        <a href="#old-village">
+            Старая Тарханка
+        </a>
+
+        <a href="#church">
+            Успенская церковь
+        </a>
+
+        <a href="#people">
+            Люди и семьи
+        </a>
+
+        <a href="#soviet">
+            Советский период
+        </a>
+
+        <a href="#streets">
+            Улицы и дома
+        </a>
+
+        <a href="#modern">
+            Современность
+        </a>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         СТАРАЯ ТАРХАНКА
+    ======================================================= -->
+
+    <section
+        class="photo-category"
+        id="old-village"
+    >
+
+        <div class="photo-category-heading">
+
+            <p class="section-label">
+                ДО 1917 ГОДА
+            </p>
+
+            <h2>
+                Старая Тарханка
+            </h2>
+
+            <p>
+                Дореволюционные фотографии,
+                виды села, старые дома,
+                жители и хозяйственная жизнь.
+            </p>
+
+        </div>
+
+
+        <div class="photo-grid">
+
+
+            <figure class="archive-photo">
+
+                <div class="archive-photo-placeholder">
+                    Фотография пока не добавлена
+                </div>
+
+                <figcaption>
+                    Старая Тарханка.
+                    Дата и автор уточняются.
+                </figcaption>
+
+            </figure>
+
+
+            <figure class="archive-photo">
+
+                <div class="archive-photo-placeholder">
+                    Фотография пока не добавлена
+                </div>
+
+                <figcaption>
+                    Вид села.
+                    Материал разыскивается.
+                </figcaption>
+
+            </figure>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         УСПЕНСКАЯ ЦЕРКОВЬ
+    ======================================================= -->
+
+    <section
+        class="photo-category"
+        id="church"
+    >
+
+        <div class="photo-category-heading">
+
+            <p class="section-label">
+                ИСТОРИЧЕСКОЕ МЕСТО
+            </p>
+
+            <h2>
+                Успенская церковь
+            </h2>
+
+            <p>
+                Исторические изображения храма,
+                его территории и художественные
+                реконструкции по сохранившимся материалам.
+            </p>
+
+        </div>
+
+
+        <div class="photo-grid">
+
+
+            <figure class="archive-photo">
+
+                <img
+                    src="images/history/uspenskaya-church.jpg"
+                    alt="Успенская церковь в селе Тарханка"
+                >
+
+                <figcaption>
+                    Успенская церковь в Тарханке.
+                    Художественная реконструкция
+                    по исторической фотографии.
+                </figcaption>
+
+            </figure>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         ЛЮДИ И СЕМЬИ
+    ======================================================= -->
+
+    <section
+        class="photo-category"
+        id="people"
+    >
+
+        <div class="photo-category-heading">
+
+            <p class="section-label">
+                ЖИТЕЛИ ТАРХАНКИ
+            </p>
+
+            <h2>
+                Люди и семьи
+            </h2>
+
+            <p>
+                Семейные фотографии,
+                портреты жителей,
+                школьные снимки
+                и групповые фотографии.
+            </p>
+
+        </div>
+
+
+        <div class="photo-grid">
+
+
+            <figure class="archive-photo">
+
+                <img
+                    src="images/people/ivanov-grigory.jpg"
+                    alt="Григорий Федосеевич Иванов"
+                >
+
+                <figcaption>
+                    Григорий Федосеевич Иванов.
+                </figcaption>
+
+            </figure>
+
+
+            <figure class="archive-photo">
+
+                <img
+                    src="images/people/mekhnin-fedor.jpg"
+                    alt="Фёдор Михайлович Мехнин"
+                >
+
+                <figcaption>
+                    Фёдор Михайлович Мехнин.
+                </figcaption>
+
+            </figure>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         СОВЕТСКИЙ ПЕРИОД
+    ======================================================= -->
+
+    <section
+        class="photo-category"
+        id="soviet"
+    >
+
+        <div class="photo-category-heading">
+
+            <p class="section-label">
+                XX ВЕК
+            </p>
+
+            <h2>
+                Советская Тарханка
+            </h2>
+
+            <p>
+                Колхозы и совхозы,
+                сельскохозяйственная техника,
+                праздники, школа,
+                трудовые коллективы
+                и общественная жизнь.
+            </p>
+
+        </div>
+
+
+        <div class="photo-grid">
+
+
+            <figure class="archive-photo">
+
+                <div class="archive-photo-placeholder">
+                    Ищем фотографии
+                </div>
+
+                <figcaption>
+                    Сельское хозяйство Тарханки.
+                </figcaption>
+
+            </figure>
+
+
+            <figure class="archive-photo">
+
+                <div class="archive-photo-placeholder">
+                    Ищем фотографии
+                </div>
+
+                <figcaption>
+                    Жители и трудовые коллективы.
+                </figcaption>
+
+            </figure>
+
+
+            <figure class="archive-photo">
+
+                <div class="archive-photo-placeholder">
+                    Ищем фотографии
+                </div>
+
+                <figcaption>
+                    Школа и общественная жизнь.
+                </figcaption>
+
+            </figure>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         УЛИЦЫ И ДОМА
+    ======================================================= -->
+
+    <section
+        class="photo-category"
+        id="streets"
+    >
+
+        <div class="photo-category-heading">
+
+            <p class="section-label">
+                ОБЛИК СЕЛА
+            </p>
+
+            <h2>
+                Улицы и дома
+            </h2>
+
+            <p>
+                Фотографии улиц,
+                домов и общественных зданий
+                помогают проследить,
+                как менялся внешний вид Тарханки.
+            </p>
+
+        </div>
+
+
+        <div class="photo-grid">
+
+
+            <figure class="archive-photo">
+
+                <div class="archive-photo-placeholder">
+                    Фотография пока не добавлена
+                </div>
+
+                <figcaption>
+                    Улицы Тарханки.
+                </figcaption>
+
+            </figure>
+
+
+            <figure class="archive-photo">
+
+                <div class="archive-photo-placeholder">
+                    Фотография пока не добавлена
+                </div>
+
+                <figcaption>
+                    Старые дома села.
+                </figcaption>
+
+            </figure>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         СОВРЕМЕННАЯ ТАРХАНКА
+    ======================================================= -->
+
+    <section
+        class="photo-category"
+        id="modern"
+    >
+
+        <div class="photo-category-heading">
+
+            <p class="section-label">
+                XXI ВЕК
+            </p>
+
+            <h2>
+                Тарханка сегодня
+            </h2>
+
+            <p>
+                Современные фотографии
+                сохранят для будущего
+                сегодняшний облик села.
+            </p>
+
+        </div>
+
+
+        <div class="photo-grid">
+
+
+            <figure class="archive-photo">
+
+                <div class="archive-photo-placeholder">
+                    Современная фотография
+                </div>
+
+                <figcaption>
+                    Современная Тарханка.
+                </figcaption>
+
+            </figure>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         ПОМОЩЬ АРХИВУ
+    ======================================================= -->
+
+    <section class="participate">
+
+        <h2>
+            Помогите пополнить фотоархив
+        </h2>
+
+        <p>
+            Если у вас сохранились фотографии Тарханки,
+            её жителей, улиц, домов или событий,
+            мы будем рады сохранить их
+            в общем цифровом архиве села.
+        </p>
+
+        <a
+            href="contacts.html"
+            class="history-button"
+        >
+            Передать фотографию →
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==========================================================
+     FOOTER
+========================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <div class="footer-tree">
+                ♣
+            </div>
+
+            <div>
+
+                <h2>
+                    Тарханка
+                </h2>
+
+                <p>
+                    история села и его людей
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-contribute">
+
+            <p>
+                Если у вас есть фотографии,
+                документы или истории,
+                связанные с Тарханкой,
+                свяжитесь с нами.
+            </p>
+
+            <a
+                href="contacts.html"
+                class="footer-button"
+            >
+                Связаться с нами
+            </a>
+
+        </div>
+
+
+        <div class="footer-contacts">
+
+            <p>
+                ✉
+                <a href="contacts.html">
+                    Контакты портала
+                </a>
+            </p>
+
+            <p>
+                ⌖ Восточно-Казахстанская область,<br>
+                село Тарханка
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © Тарханка —
+            история села и его людей, 2026
+        </span>
+
+        <span>
+            Сохраняем прошлое —
+            создаём будущее
+        </span>
+
+    </div>
+
+</footer>
+
 
 </body>
+
 </html>
