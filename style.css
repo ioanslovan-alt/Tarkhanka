@@ -1162,7 +1162,7 @@ a {
     /* ШАПКУ НЕ МЕНЯЕМ: оставляем текущий размер */
     .forest-background {
         width: 100%;
-        height: 120px;
+        height: 200px;
 
         padding: 0;
 
