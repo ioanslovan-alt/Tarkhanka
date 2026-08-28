@@ -5073,3 +5073,21 @@ a.portal-card:hover .card-link {
     }
 
 }
+/* ---------- Размер шапки ---------- */
+
+.hero {
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ---------- Шапка на телефоне ---------- */
+
+@media (max-width: 768px) {
+    .hero {
+        height: 120px;
+        min-height: 0;
+        background-size: cover;
+        background-position: center;
+    }
+}
