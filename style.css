@@ -1160,14 +1160,15 @@ a {
 @media (max-width: 720px) {
 
     /* ШАПКУ НЕ МЕНЯЕМ: оставляем текущий размер */
+
     .forest-background {
         width: 100%;
-        height: 200px;
-
+        height: 210px;
+        min-height: 0;
         padding: 0;
 
         background-size: cover;
-        background-position: center center;
+        background-position: center;
         background-repeat: no-repeat;
 
         overflow: hidden;
@@ -1381,11 +1382,12 @@ a {
 @media (max-width: 470px) {
 
     /* ШАПКУ НЕ МЕНЯЕМ: оставляем текущий размер */
-    .forest-background {
-        height: 100px;
 
+    .forest-background {
+        height: 65px;
+        min-height: 0;
         background-size: cover;
-        background-position: center center;
+        background-position: center;
     }
 
 
@@ -2985,7 +2987,7 @@ a.portal-card:hover .card-link {
     background-size: cover;
 }
 /* ==========================================================
-   СТРАНИЦА "РОДЫ"
+   СТРАНИЦА "Первые семьи"
 ========================================================== */
 
 .families-page {
@@ -5076,7 +5078,7 @@ a.portal-card:hover .card-link {
 /* ---------- Размер шапки ---------- */
 
 .hero {
-    height: 230px;
+    height: 210px;
     background-size: cover;
     background-position: center;
 }
@@ -5085,9 +5087,76 @@ a.portal-card:hover .card-link {
 
 @media (max-width: 768px) {
     .hero {
-        height: 120px;
+        height: 65px;
         min-height: 0;
         background-size: cover;
         background-position: center;
+    }
+}
+
+/* ==========================================================
+   ШАПКИ ВНУТРЕННИХ СТРАНИЦ
+   История и Люди
+========================================================== */
+
+/* Совместимость со старой разметкой */
+.history-page-header,
+.people-header-image {
+    width: 100%;
+    height: 120px;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Текущая разметка с обычным <img> */
+.page-header-image {
+    width: 100%;
+    height: 190px;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #25180e;
+}
+
+.page-header-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Планшет */
+@media (max-width: 1150px) {
+    .history-page-header,
+    .people-header-image,
+    .page-header-image {
+        height: 80px;
+    }
+}
+
+/* Телефон — оставляем текущий размер */
+@media (max-width: 720px) {
+    .history-page-header,
+    .people-header-image,
+    .page-header-image {
+        height: 65px;
+    }
+}
+
+/* Маленький телефон — оставляем текущий размер */
+@media (max-width: 470px) {
+    .history-page-header,
+    .people-header-image,
+    .page-header-image {
+        height: 65px;
     }
 }
